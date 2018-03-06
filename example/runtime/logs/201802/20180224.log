@@ -1,0 +1,102 @@
+2018-02-24 13:24:20 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\EZ\ez\core\Model.php at line 193
+2018-02-24 13:24:20 ErrorLevel:8, E_NOTICE: Accessing static property example\model\TestModel::$tableName as non static in E:\github\EZ\ez\core\Model.php at line 45
+2018-02-24 13:24:20 Exception: no tableName in E:\github\EZ\ez\core\Model.php:47
+Stack trace:
+#0 E:\github\EZ\example\controller\IndexController.php(15): ez\core\Model->__construct()
+#1 E:\github\EZ\ez\core\Application.php(39): example\controller\IndexController->index()
+#2 E:\github\EZ\ez\core\Ez.php(89): ez\core\Application->run()
+#3 E:\github\EZ\example\web\index.php(22): ez\core\Ez::start()
+#4 {main}
+2018-02-24 13:26:28 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\EZ\ez\core\Model.php at line 194
+2018-02-24 13:26:28 ErrorLevel:8, E_NOTICE: Accessing static property example\model\TestModel::$tableName as non static in E:\github\EZ\ez\core\Model.php at line 46
+2018-02-24 13:26:28 Exception: no tableName in E:\github\EZ\ez\core\Model.php:48
+Stack trace:
+#0 E:\github\EZ\example\controller\IndexController.php(15): ez\core\Model->__construct()
+#1 E:\github\EZ\ez\core\Application.php(39): example\controller\IndexController->index()
+#2 E:\github\EZ\ez\core\Ez.php(89): ez\core\Application->run()
+#3 E:\github\EZ\example\web\index.php(22): ez\core\Ez::start()
+#4 {main}
+2018-02-24 13:26:52 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\EZ\ez\core\Model.php at line 195
+2018-02-24 13:26:52 ErrorLevel:8, E_NOTICE: Accessing static property example\model\TestModel::$tableName as non static in E:\github\EZ\ez\core\Model.php at line 46
+2018-02-24 13:26:52 Exception: no tableName in E:\github\EZ\ez\core\Model.php:48
+Stack trace:
+#0 E:\github\EZ\example\controller\IndexController.php(15): ez\core\Model->__construct()
+#1 E:\github\EZ\ez\core\Application.php(39): example\controller\IndexController->index()
+#2 E:\github\EZ\ez\core\Ez.php(89): ez\core\Application->run()
+#3 E:\github\EZ\example\web\index.php(22): ez\core\Ez::start()
+#4 {main}
+2018-02-24 13:27:10 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\EZ\ez\core\Model.php at line 195
+2018-02-24 13:27:10 ErrorLevel:8, E_NOTICE: Accessing static property example\model\TestModel::$tableName as non static in E:\github\EZ\ez\core\Model.php at line 46
+2018-02-24 13:27:10 Exception: no tableName in E:\github\EZ\ez\core\Model.php:48
+Stack trace:
+#0 E:\github\EZ\example\controller\IndexController.php(15): ez\core\Model->__construct()
+#1 E:\github\EZ\ez\core\Application.php(39): example\controller\IndexController->index()
+#2 E:\github\EZ\ez\core\Ez.php(89): ez\core\Application->run()
+#3 E:\github\EZ\example\web\index.php(22): ez\core\Ez::start()
+#4 {main}
+2018-02-24 13:27:22 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\EZ\ez\core\Model.php at line 195
+2018-02-24 13:28:19 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\EZ\ez\core\Model.php at line 196
+2018-02-24 13:28:30 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\EZ\ez\core\Model.php at line 196
+2018-02-24 13:28:30 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\EZ\ez\core\Model.php at line 196
+2018-02-24 13:28:31 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\EZ\ez\core\Model.php at line 196
+2018-02-24 13:28:31 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\EZ\ez\core\Model.php at line 196
+2018-02-24 13:30:42 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\EZ\ez\core\Model.php at line 184
+2018-02-24 13:38:58 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\EZ\ez\core\Model.php at line 184
+2018-02-24 13:38:58 ErrorLevel:8, E_NOTICE: Accessing static property example\model\TestModel::$tableName as non static in E:\github\EZ\ez\core\Model.php at line 45
+2018-02-24 13:38:58 ErrorLevel:8, E_NOTICE: Undefined property: example\model\TestModel::$tableName in E:\github\EZ\ez\core\Model.php at line 45
+2018-02-24 13:49:30 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\EZ\ez\core\Model.php at line 184
+2018-02-24 13:50:34 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\EZ\ez\core\Model.php at line 184
+2018-02-24 13:50:35 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\EZ\ez\core\Model.php at line 184
+2018-02-24 13:50:35 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\EZ\ez\core\Model.php at line 184
+2018-02-24 13:50:35 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\EZ\ez\core\Model.php at line 184
+2018-02-24 13:50:35 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\EZ\ez\core\Model.php at line 184
+2018-02-24 13:50:36 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\EZ\ez\core\Model.php at line 184
+2018-02-24 13:50:36 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\EZ\ez\core\Model.php at line 184
+2018-02-24 13:50:52 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\EZ\ez\core\Model.php at line 184
+2018-02-24 13:54:50 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\EZ\ez\core\Model.php at line 185
+2018-02-24 13:54:50 Error: Undefined class constant 'tab' in E:\github\EZ\ez\core\Model.php:45
+Stack trace:
+#0 E:\github\EZ\example\controller\IndexController.php(15): ez\core\Model->__construct()
+#1 E:\github\EZ\ez\core\Application.php(39): example\controller\IndexController->index()
+#2 E:\github\EZ\ez\core\Ez.php(89): ez\core\Application->run()
+#3 E:\github\EZ\example\web\index.php(22): ez\core\Ez::start()
+#4 {main}
+2018-02-24 13:55:12 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\EZ\ez\core\Model.php at line 185
+2018-02-24 13:55:12 ErrorLevel:8, E_NOTICE: Use of undefined constant tab - assumed 'tab' in E:\github\EZ\ez\core\Model.php at line 45
+2018-02-24 13:57:18 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\EZ\ez\core\Model.php at line 185
+2018-02-24 13:57:18 Error: Undefined class constant 'tab' in E:\github\EZ\ez\core\Model.php:45
+Stack trace:
+#0 E:\github\EZ\example\controller\IndexController.php(15): ez\core\Model->__construct()
+#1 E:\github\EZ\ez\core\Application.php(39): example\controller\IndexController->index()
+#2 E:\github\EZ\ez\core\Ez.php(89): ez\core\Application->run()
+#3 E:\github\EZ\example\web\index.php(22): ez\core\Ez::start()
+#4 {main}
+2018-02-24 13:57:24 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\EZ\ez\core\Model.php at line 184
+2018-02-24 14:03:59 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\EZ\ez\core\Model.php at line 194
+2018-02-24 14:03:59 ErrorLevel:8, E_NOTICE: Accessing static property example\model\TestModel::$tableName as non static in E:\github\EZ\ez\core\Model.php at line 45
+2018-02-24 14:03:59 ErrorLevel:8, E_NOTICE: Accessing static property example\model\TestModel::$trueTableName as non static in E:\github\EZ\ez\core\Model.php at line 51
+2018-02-24 14:04:55 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\EZ\ez\core\Model.php at line 194
+2018-02-24 14:04:55 ErrorLevel:8, E_NOTICE: Accessing static property example\model\TestModel::$tableName as non static in E:\github\EZ\ez\core\Model.php at line 45
+2018-02-24 14:04:55 ErrorLevel:8, E_NOTICE: Accessing static property example\model\TestModel::$trueTableName as non static in E:\github\EZ\ez\core\Model.php at line 51
+2018-02-24 14:11:42 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\EZ\ez\core\Model.php at line 195
+2018-02-24 14:11:42 ErrorLevel:8, E_NOTICE: Accessing static property example\model\TestModel::$tableName as non static in E:\github\EZ\ez\core\Model.php at line 45
+2018-02-24 14:11:42 ErrorLevel:8, E_NOTICE: Accessing static property example\model\TestModel::$trueTableName as non static in E:\github\EZ\ez\core\Model.php at line 51
+2018-02-24 14:15:23 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\EZ\ez\core\Model.php at line 195
+2018-02-24 14:15:23 ErrorLevel:8, E_NOTICE: Accessing static property example\model\TestModel::$tableName as non static in E:\github\EZ\ez\core\Model.php at line 45
+2018-02-24 14:15:23 ErrorLevel:8, E_NOTICE: Accessing static property example\model\TestModel::$trueTableName as non static in E:\github\EZ\ez\core\Model.php at line 51
+2018-02-24 14:16:35 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\EZ\ez\core\Model.php at line 196
+2018-02-24 14:16:35 ErrorLevel:8, E_NOTICE: Accessing static property example\model\TestModel::$tableName as non static in E:\github\EZ\ez\core\Model.php at line 45
+2018-02-24 14:16:35 ErrorLevel:8, E_NOTICE: Accessing static property example\model\TestModel::$trueTableName as non static in E:\github\EZ\ez\core\Model.php at line 52
+2018-02-24 14:30:21 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\EZ\ez\core\Model.php at line 194
+2018-02-24 14:30:21 ErrorLevel:8, E_NOTICE: Accessing static property example\model\TestModel::$tableName as non static in E:\github\EZ\ez\core\Model.php at line 45
+2018-02-24 14:30:21 ErrorLevel:8, E_NOTICE: Accessing static property example\model\TestModel::$trueTableName as non static in E:\github\EZ\ez\core\Model.php at line 51
+2018-02-24 15:04:34 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\EZ\ez\core\Model.php at line 194
+2018-02-24 15:04:58 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\EZ\ez\core\Model.php at line 194
+2018-02-24 15:04:59 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\EZ\ez\core\Model.php at line 194
+2018-02-24 15:05:39 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\EZ\ez\core\Model.php at line 195
+2018-02-24 15:05:53 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\EZ\ez\core\Model.php at line 195
+2018-02-24 15:25:01 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\EZ\ez\core\Model.php at line 181
+2018-02-24 15:25:18 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\EZ\ez\core\Model.php at line 182
+2018-02-24 15:25:27 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\EZ\ez\core\Model.php at line 183
+2018-02-24 15:47:16 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\EZ\ez\core\Model.php at line 185
+2018-02-24 15:47:51 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\EZ\ez\core\Model.php at line 185

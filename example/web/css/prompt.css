@@ -1,0 +1,53 @@
+/*
+公用样式部分
+*/
+* { word-wrap:break-word }
+html{ padding:0; margin:0;}
+body { padding:0; margin:0; font-size:12px;font-family: 'Microsoft Yahei', Verdana, arial,sans-serif; text-align:center; color:#333; }
+body, div, dl, dt, dd, ul, ol, li, pre, form, fieldset, blockquote, h1, h2, h3, h4, h5, h6 { padding:0; margin:0 }
+h1, h2, h3, h4, h5, h6 { font-weight: normal; }
+table, td, tr, th { font-size:12px }
+input,select {vertical-align: middle;}
+li { list-style-type:none }
+table { margin:0 auto }
+img { border:none }
+ol, ul { list-style:none }
+caption, th { text-align:left }
+ 
+ 
+ /* link color font */
+a:link { color:#395690; text-decoration:none }
+a:visited { color:#395690; text-decoration:none }
+a:hover { color:#BA2636; text-decoration:underline }
+a:active { color:#395690 }
+.cWhite, .cWhite:visited, a.cWhite { color:#fff }
+.cYellow, .cYellow:visited { color:#ff0 }
+.cGray, .cGray:visited, a.cGray { color:#333 }
+.cGray2, .cGray2:visited, a.cGray2 { color:#999 }
+.cBlack, .cBlack:visited, a.cBlack { color:#000 }
+.cBlue, .cBlue:visited, a.cBlue { color:#3488AD }
+.cRed, .cRed:visited, a.cRed { color:Red }
+.cGreen, a.cGreen:link, a.cGreen:visited { color:#008000; }
+.user_app a{}
+
+
+/* 成功 | 错误 提示*/
+.success_bg{background:#393;}
+.error_bg{background:#e63a3a;}
+.success_b{border:2px solid #393;}
+.error_b{border:2px solid #e63a3a;}
+
+
+.Prompt_top, .Prompt_btm, .Prompt_ok, .Prompt_x { display:inline-block }
+.Prompt { width:640px; margin:100px auto 180px; text-align:left; }
+.Prompt_top { background-position:0 0; height:42px; width:100%; }
+.Prompt_top h1{ margin-left:10px; font-size: 18px; line-height:42px; color:#FFF;}
+
+.Prompt_con { background:#fff; height:180px;}
+.Prompt_con dl { margin:20px 40px; overflow:hidden;}
+.Prompt_con dd { float:left; display:block; padding:15px; }
+.Prompt_con dd h2 { font-size:16px; line-height:30px;}
+
+.Prompt_ok { background:url(../images/prompt.png) no-repeat 0px -48px; margin-top:6px; width:48px; height:48px; }
+.Prompt_x { background:url(../images/prompt.png) no-repeat 0px 0px; margin-top:6px; width:48px; height:48px; }
+.Prompt_con a.a { color:#fff; padding:0 15px; line-height:30px; background-color:#307ba0; display:inline-block; font-size:14px; margin:20px 0px; }
