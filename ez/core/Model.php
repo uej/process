@@ -404,8 +404,7 @@ class Model
         
         $arr = [];
         
-        $this->query("SHOW COLUMNS FROM `$this->trueTableName`");
-        $columns = $this->statement->fetchAll(\PDO::FETCH_ASSOC);
+        $columns = $this->query("SHOW COLUMNS FROM `$this->trueTableName`")->fetchAll(\PDO::FETCH_ASSOC);
         foreach ($columns as $val) {
             $keys[] = $val['Field'];
         }

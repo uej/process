@@ -1,0 +1,894 @@
+2018-03-07 17:26:53 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 17:26:53 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 17:26:53 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 17:26:53 Exception: not exist Controller layui in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 17:26:53 Exception: not exist Controller js in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 17:26:54 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 17:26:54 Exception: not exist Controller layui in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 17:29:11 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 17:29:11 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 17:29:11 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 17:29:11 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 17:29:16 Exception: not exist Controller hindex in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 17:29:17 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 17:29:17 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 17:29:17 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 17:29:17 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 17:34:32 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 17:34:32 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 17:34:32 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 17:34:32 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 17:34:41 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 17:34:41 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 17:34:41 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 17:34:41 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 17:35:57 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 17:35:57 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 17:35:57 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 17:35:57 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 17:35:59 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 17:35:59 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 17:35:59 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 17:35:59 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 17:36:00 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 17:36:00 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 17:36:00 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 17:36:00 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 17:40:45 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 17:40:45 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 17:40:45 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 17:40:45 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 17:40:53 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 17:40:53 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 17:40:53 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 17:40:53 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 17:41:32 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 17:41:32 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 17:41:32 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 17:41:32 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 17:41:55 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 17:41:55 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 17:41:55 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 17:41:55 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 17:41:56 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 17:41:56 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 17:41:56 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 17:41:56 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 17:41:57 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 17:41:57 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 17:41:57 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 17:41:57 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 17:42:04 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 17:42:04 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 17:42:04 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 17:42:04 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 17:45:00 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 17:45:00 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 17:45:00 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 17:45:00 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 17:57:21 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 17:57:21 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 17:57:21 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 17:57:21 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 18:08:30 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 18:08:30 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 18:08:30 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 18:08:30 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 18:08:39 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 18:08:39 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 18:08:39 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 18:08:39 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 18:08:40 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 18:08:40 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 18:08:40 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 18:08:40 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 18:08:40 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 18:08:40 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 18:08:40 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 18:08:40 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 18:08:41 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 18:08:41 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 18:08:41 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 18:08:41 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 18:08:41 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 18:08:41 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 18:08:41 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 18:08:41 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 18:08:42 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 18:08:42 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 18:08:42 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 18:08:42 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 18:08:42 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 18:08:42 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 18:08:42 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 18:08:42 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 18:08:43 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 18:08:43 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 18:08:43 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 18:08:43 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 18:08:55 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 18:08:55 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 18:08:55 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 18:08:55 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 18:08:58 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 18:08:58 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 18:08:58 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 18:08:58 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 18:08:58 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 18:08:58 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 18:08:58 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 18:08:58 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 18:08:58 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 18:08:58 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 18:08:58 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 18:08:58 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 18:08:59 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 18:08:59 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 18:08:59 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 18:08:59 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 18:08:59 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 18:08:59 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 18:08:59 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 18:08:59 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 18:08:59 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 18:08:59 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 18:08:59 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 18:08:59 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 18:09:00 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 18:09:00 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 18:09:00 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 18:09:00 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 18:09:00 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 18:09:00 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 18:09:00 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 18:09:00 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 18:09:00 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 18:09:00 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 18:09:00 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 18:09:00 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 18:09:00 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 18:09:00 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 18:09:00 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 18:09:00 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 18:09:01 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 18:09:01 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 18:09:01 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 18:09:01 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 18:09:06 Exception: not exist Controller hindex in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 18:09:07 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 18:09:07 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 18:09:07 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 18:09:07 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 18:09:25 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 18:09:25 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 18:09:25 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 18:09:25 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 18:09:26 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 18:09:26 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 18:09:26 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 18:09:26 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 18:09:26 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 18:09:26 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 18:09:26 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 18:09:26 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 18:09:26 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 18:09:26 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 18:09:26 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 18:09:26 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 18:13:31 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 18:13:31 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 18:13:31 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 18:13:31 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 18:13:42 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 18:13:42 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 18:13:42 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 18:13:42 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 18:14:37 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 18:14:37 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 18:14:37 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 18:14:37 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 18:14:38 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 18:14:38 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 18:14:38 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 18:14:38 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 18:31:01 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 18:31:01 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 18:31:01 ErrorLevel:8, E_NOTICE: Undefined variable: html in E:\github\process\example\view\index\index.php at line 69
+2018-03-07 18:31:01 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 18:31:03 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 18:31:03 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 18:31:03 ErrorLevel:8, E_NOTICE: Undefined variable: html in E:\github\process\example\view\index\index.php at line 69
+2018-03-07 18:31:03 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 18:31:04 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 18:31:04 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\index.php at line 15
+2018-03-07 18:31:04 ErrorLevel:8, E_NOTICE: Undefined variable: html in E:\github\process\example\view\index\index.php at line 69
+2018-03-07 18:31:04 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 18:31:06 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 18:31:06 ErrorLevel:8, E_NOTICE: Undefined variable: html in E:\github\process\ez\core\Model.php at line 388
+2018-03-07 18:31:06 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\type.php at line 18
+2018-03-07 18:31:06 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\type.php at line 18
+2018-03-07 18:31:06 ErrorLevel:8, E_NOTICE: Undefined index: Name in E:\github\process\example\view\index\type.php at line 50
+2018-03-07 18:31:06 ErrorLevel:8, E_NOTICE: Undefined index: CreateTime in E:\github\process\example\view\index\type.php at line 51
+2018-03-07 18:31:06 Error: Call to undefined function getAreaName() in E:\github\process\example\view\index\type.php:52
+Stack trace:
+#0 E:\github\process\ez\core\Controller.php(74): include()
+#1 E:\github\process\example\controller\IndexController.php(32): ez\core\Controller->display(Array)
+#2 E:\github\process\ez\core\Application.php(39): example\controller\IndexController->type()
+#3 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#4 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#5 {main}
+2018-03-07 18:31:06 ErrorLevel:2, E_WARNING: Cannot modify header information - headers already sent by (output started at E:\github\process\example\view\index\type.php:51) in E:\github\process\ez\core\Error.php at line 18
+2018-03-07 18:31:07 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 18:34:01 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 18:34:01 ErrorLevel:8, E_NOTICE: Undefined variable: html in E:\github\process\ez\core\Model.php at line 388
+2018-03-07 18:34:01 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\type.php at line 18
+2018-03-07 18:34:01 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\type.php at line 18
+2018-03-07 18:34:01 ErrorLevel:8, E_NOTICE: Undefined index: Name in E:\github\process\example\view\index\type.php at line 45
+2018-03-07 18:34:01 ErrorLevel:8, E_NOTICE: Undefined index: Status in E:\github\process\example\view\index\type.php at line 46
+2018-03-07 18:34:01 ErrorLevel:8, E_NOTICE: Undefined index: Status in E:\github\process\example\view\index\type.php at line 49
+2018-03-07 18:34:01 ErrorLevel:8, E_NOTICE: Undefined index: Name in E:\github\process\example\view\index\type.php at line 45
+2018-03-07 18:34:01 ErrorLevel:8, E_NOTICE: Undefined index: Status in E:\github\process\example\view\index\type.php at line 46
+2018-03-07 18:34:01 ErrorLevel:8, E_NOTICE: Undefined index: Status in E:\github\process\example\view\index\type.php at line 49
+2018-03-07 18:34:01 ErrorLevel:8, E_NOTICE: Undefined index: Name in E:\github\process\example\view\index\type.php at line 45
+2018-03-07 18:34:01 ErrorLevel:8, E_NOTICE: Undefined index: Status in E:\github\process\example\view\index\type.php at line 46
+2018-03-07 18:34:01 ErrorLevel:8, E_NOTICE: Undefined index: Status in E:\github\process\example\view\index\type.php at line 49
+2018-03-07 18:34:01 ErrorLevel:8, E_NOTICE: Undefined index: Name in E:\github\process\example\view\index\type.php at line 45
+2018-03-07 18:34:02 ErrorLevel:8, E_NOTICE: Undefined index: Status in E:\github\process\example\view\index\type.php at line 46
+2018-03-07 18:34:02 ErrorLevel:8, E_NOTICE: Undefined index: Status in E:\github\process\example\view\index\type.php at line 49
+2018-03-07 18:34:02 ErrorLevel:8, E_NOTICE: Undefined index: Name in E:\github\process\example\view\index\type.php at line 45
+2018-03-07 18:34:02 ErrorLevel:8, E_NOTICE: Undefined index: Status in E:\github\process\example\view\index\type.php at line 46
+2018-03-07 18:34:02 ErrorLevel:8, E_NOTICE: Undefined index: Status in E:\github\process\example\view\index\type.php at line 49
+2018-03-07 18:34:02 ErrorLevel:8, E_NOTICE: Undefined index: Name in E:\github\process\example\view\index\type.php at line 45
+2018-03-07 18:34:02 ErrorLevel:8, E_NOTICE: Undefined index: Status in E:\github\process\example\view\index\type.php at line 46
+2018-03-07 18:34:02 ErrorLevel:8, E_NOTICE: Undefined index: Status in E:\github\process\example\view\index\type.php at line 49
+2018-03-07 18:34:02 ErrorLevel:8, E_NOTICE: Undefined index: Name in E:\github\process\example\view\index\type.php at line 45
+2018-03-07 18:34:02 ErrorLevel:8, E_NOTICE: Undefined index: Status in E:\github\process\example\view\index\type.php at line 46
+2018-03-07 18:34:02 ErrorLevel:8, E_NOTICE: Undefined index: Status in E:\github\process\example\view\index\type.php at line 49
+2018-03-07 18:34:02 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 18:34:34 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 18:34:34 ErrorLevel:8, E_NOTICE: Undefined variable: html in E:\github\process\ez\core\Model.php at line 388
+2018-03-07 18:34:34 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\type.php at line 18
+2018-03-07 18:34:34 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\type.php at line 18
+2018-03-07 18:34:34 ErrorLevel:8, E_NOTICE: Undefined index: Name in E:\github\process\example\view\index\type.php at line 45
+2018-03-07 18:34:34 ErrorLevel:8, E_NOTICE: Undefined index: Status in E:\github\process\example\view\index\type.php at line 48
+2018-03-07 18:34:34 ErrorLevel:8, E_NOTICE: Undefined index: Name in E:\github\process\example\view\index\type.php at line 45
+2018-03-07 18:34:34 ErrorLevel:8, E_NOTICE: Undefined index: Status in E:\github\process\example\view\index\type.php at line 48
+2018-03-07 18:34:34 ErrorLevel:8, E_NOTICE: Undefined index: Name in E:\github\process\example\view\index\type.php at line 45
+2018-03-07 18:34:34 ErrorLevel:8, E_NOTICE: Undefined index: Status in E:\github\process\example\view\index\type.php at line 48
+2018-03-07 18:34:34 ErrorLevel:8, E_NOTICE: Undefined index: Name in E:\github\process\example\view\index\type.php at line 45
+2018-03-07 18:34:34 ErrorLevel:8, E_NOTICE: Undefined index: Status in E:\github\process\example\view\index\type.php at line 48
+2018-03-07 18:34:34 ErrorLevel:8, E_NOTICE: Undefined index: Name in E:\github\process\example\view\index\type.php at line 45
+2018-03-07 18:34:34 ErrorLevel:8, E_NOTICE: Undefined index: Status in E:\github\process\example\view\index\type.php at line 48
+2018-03-07 18:34:34 ErrorLevel:8, E_NOTICE: Undefined index: Name in E:\github\process\example\view\index\type.php at line 45
+2018-03-07 18:34:34 ErrorLevel:8, E_NOTICE: Undefined index: Status in E:\github\process\example\view\index\type.php at line 48
+2018-03-07 18:34:34 ErrorLevel:8, E_NOTICE: Undefined index: Name in E:\github\process\example\view\index\type.php at line 45
+2018-03-07 18:34:34 ErrorLevel:8, E_NOTICE: Undefined index: Status in E:\github\process\example\view\index\type.php at line 48
+2018-03-07 18:34:34 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 18:34:35 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 18:34:35 ErrorLevel:8, E_NOTICE: Undefined variable: html in E:\github\process\ez\core\Model.php at line 388
+2018-03-07 18:34:35 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\type.php at line 18
+2018-03-07 18:34:35 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\type.php at line 18
+2018-03-07 18:34:35 ErrorLevel:8, E_NOTICE: Undefined index: Name in E:\github\process\example\view\index\type.php at line 45
+2018-03-07 18:34:35 ErrorLevel:8, E_NOTICE: Undefined index: Status in E:\github\process\example\view\index\type.php at line 48
+2018-03-07 18:34:35 ErrorLevel:8, E_NOTICE: Undefined index: Name in E:\github\process\example\view\index\type.php at line 45
+2018-03-07 18:34:35 ErrorLevel:8, E_NOTICE: Undefined index: Status in E:\github\process\example\view\index\type.php at line 48
+2018-03-07 18:34:35 ErrorLevel:8, E_NOTICE: Undefined index: Name in E:\github\process\example\view\index\type.php at line 45
+2018-03-07 18:34:35 ErrorLevel:8, E_NOTICE: Undefined index: Status in E:\github\process\example\view\index\type.php at line 48
+2018-03-07 18:34:35 ErrorLevel:8, E_NOTICE: Undefined index: Name in E:\github\process\example\view\index\type.php at line 45
+2018-03-07 18:34:35 ErrorLevel:8, E_NOTICE: Undefined index: Status in E:\github\process\example\view\index\type.php at line 48
+2018-03-07 18:34:35 ErrorLevel:8, E_NOTICE: Undefined index: Name in E:\github\process\example\view\index\type.php at line 45
+2018-03-07 18:34:35 ErrorLevel:8, E_NOTICE: Undefined index: Status in E:\github\process\example\view\index\type.php at line 48
+2018-03-07 18:34:35 ErrorLevel:8, E_NOTICE: Undefined index: Name in E:\github\process\example\view\index\type.php at line 45
+2018-03-07 18:34:35 ErrorLevel:8, E_NOTICE: Undefined index: Status in E:\github\process\example\view\index\type.php at line 48
+2018-03-07 18:34:35 ErrorLevel:8, E_NOTICE: Undefined index: Name in E:\github\process\example\view\index\type.php at line 45
+2018-03-07 18:34:35 ErrorLevel:8, E_NOTICE: Undefined index: Status in E:\github\process\example\view\index\type.php at line 48
+2018-03-07 18:34:35 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 18:35:05 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 18:35:05 ErrorLevel:8, E_NOTICE: Undefined variable: html in E:\github\process\ez\core\Model.php at line 388
+2018-03-07 18:35:05 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\type.php at line 18
+2018-03-07 18:35:05 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\type.php at line 18
+2018-03-07 18:35:05 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 18:36:53 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 18:36:53 ErrorLevel:8, E_NOTICE: Undefined variable: html in E:\github\process\ez\core\Model.php at line 388
+2018-03-07 18:36:53 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\type.php at line 18
+2018-03-07 18:36:53 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\type.php at line 18
+2018-03-07 18:36:53 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 18:36:57 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 18:36:57 ErrorLevel:8, E_NOTICE: Undefined variable: html in E:\github\process\ez\core\Model.php at line 388
+2018-03-07 18:36:57 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\type.php at line 18
+2018-03-07 18:36:57 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\type.php at line 18
+2018-03-07 18:36:57 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 18:36:57 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 18:36:57 ErrorLevel:8, E_NOTICE: Undefined variable: html in E:\github\process\ez\core\Model.php at line 388
+2018-03-07 18:36:57 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\type.php at line 18
+2018-03-07 18:36:57 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\type.php at line 18
+2018-03-07 18:36:57 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 18:36:57 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 18:36:57 ErrorLevel:8, E_NOTICE: Undefined variable: html in E:\github\process\ez\core\Model.php at line 388
+2018-03-07 18:36:57 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\type.php at line 18
+2018-03-07 18:36:57 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\type.php at line 18
+2018-03-07 18:36:57 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 18:38:04 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 18:38:04 ErrorLevel:8, E_NOTICE: Undefined variable: html in E:\github\process\ez\core\Model.php at line 388
+2018-03-07 18:38:04 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 18:54:16 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 18:54:16 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 20:45:03 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 20:45:03 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 20:46:21 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 20:46:21 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 20:47:36 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 20:47:36 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 20:47:36 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 20:47:37 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 20:47:37 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 20:47:37 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 20:48:26 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 20:48:26 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 20:48:26 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 20:48:26 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 20:48:26 Exception: not exist Action addflow in E:\github\process\ez\core\Application.php:41
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 20:48:27 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 20:48:27 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 20:55:46 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 20:55:47 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 20:55:48 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\addflow.php at line 20
+2018-03-07 20:55:48 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\addflow.php at line 20
+2018-03-07 20:55:48 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 21:04:34 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\addflow.php at line 20
+2018-03-07 21:04:34 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\addflow.php at line 20
+2018-03-07 21:04:34 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 21:20:43 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\addflow.php at line 29
+2018-03-07 21:20:43 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\addflow.php at line 29
+2018-03-07 21:20:43 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 21:21:17 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\addflow.php at line 29
+2018-03-07 21:21:17 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\addflow.php at line 29
+2018-03-07 21:21:17 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 21:21:26 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 21:21:26 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 21:21:27 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 21:21:27 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 21:21:28 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\addflow.php at line 29
+2018-03-07 21:21:28 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\addflow.php at line 29
+2018-03-07 21:21:28 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 21:21:29 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 21:21:29 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 21:23:55 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 21:23:55 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 21:24:32 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 21:24:32 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 21:24:37 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 21:24:37 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 21:24:55 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 21:24:55 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 21:24:56 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\addflow.php at line 29
+2018-03-07 21:24:56 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\addflow.php at line 29
+2018-03-07 21:24:56 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 21:25:31 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 21:25:31 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 21:25:32 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\addflow.php at line 29
+2018-03-07 21:25:32 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\addflow.php at line 29
+2018-03-07 21:25:32 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 21:25:35 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\addflow.php at line 29
+2018-03-07 21:25:35 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\addflow.php at line 29
+2018-03-07 21:25:35 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 21:26:20 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 21:26:20 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 21:26:20 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 21:26:20 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 21:26:21 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\addflow.php at line 29
+2018-03-07 21:26:21 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\addflow.php at line 29
+2018-03-07 21:26:21 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 21:26:29 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 21:26:29 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 21:26:30 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\addflow.php at line 29
+2018-03-07 21:26:30 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\addflow.php at line 29
+2018-03-07 21:26:30 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 21:26:42 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\addflow.php at line 29
+2018-03-07 21:26:42 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\addflow.php at line 29
+2018-03-07 21:26:42 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 21:26:46 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\addflow.php at line 29
+2018-03-07 21:26:46 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\addflow.php at line 29
+2018-03-07 21:26:46 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 21:26:54 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 21:26:54 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 21:26:54 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 21:26:54 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 21:26:55 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\addflow.php at line 29
+2018-03-07 21:26:55 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\addflow.php at line 29
+2018-03-07 21:26:55 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 21:27:14 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 21:27:14 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 21:27:14 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\addflow.php at line 29
+2018-03-07 21:27:14 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\addflow.php at line 29
+2018-03-07 21:27:14 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 21:30:43 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 21:30:43 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 21:30:45 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\addflow.php at line 29
+2018-03-07 21:30:45 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\addflow.php at line 29
+2018-03-07 21:30:45 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 21:32:26 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 21:32:26 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 21:32:27 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 21:32:27 ErrorLevel:8, E_NOTICE: Undefined index: Title in E:\github\process\example\view\index\addflow.php at line 24
+2018-03-07 21:32:27 ErrorLevel:8, E_NOTICE: Undefined index: Title in E:\github\process\example\view\index\addflow.php at line 24
+2018-03-07 21:32:27 ErrorLevel:8, E_NOTICE: Undefined index: Title in E:\github\process\example\view\index\addflow.php at line 24
+2018-03-07 21:32:27 ErrorLevel:8, E_NOTICE: Undefined index: Title in E:\github\process\example\view\index\addflow.php at line 24
+2018-03-07 21:32:27 ErrorLevel:8, E_NOTICE: Undefined index: Title in E:\github\process\example\view\index\addflow.php at line 24
+2018-03-07 21:32:27 ErrorLevel:8, E_NOTICE: Undefined index: Title in E:\github\process\example\view\index\addflow.php at line 24
+2018-03-07 21:32:27 ErrorLevel:8, E_NOTICE: Undefined index: Title in E:\github\process\example\view\index\addflow.php at line 24
+2018-03-07 21:32:27 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\addflow.php at line 34
+2018-03-07 21:32:27 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\addflow.php at line 34
+2018-03-07 21:32:27 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 21:34:13 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 21:34:13 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 21:34:14 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 21:34:14 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\addflow.php at line 34
+2018-03-07 21:34:14 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\addflow.php at line 34
+2018-03-07 21:34:14 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 21:35:02 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 21:35:02 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 21:35:03 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 21:35:03 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\addflow.php at line 34
+2018-03-07 21:35:03 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\addflow.php at line 34
+2018-03-07 21:35:03 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 21:54:37 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 21:54:37 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
+2018-03-07 21:54:38 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-07 21:54:38 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}

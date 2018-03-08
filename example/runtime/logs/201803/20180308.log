@@ -1,0 +1,6 @@
+2018-03-08 13:58:01 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-08 13:58:02 Exception: not exist Controller css in E:\github\process\ez\core\Application.php:44
+Stack trace:
+#0 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#1 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#2 {main}
