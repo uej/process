@@ -107,8 +107,35 @@ class FlowControl
         }
         
         foreach ($orderRule as $val) {
-            
+            if (!in_array($val['type'], [1,2,3])) {
+                $result['errormsg'] = '编号规则有误';
+                return $result;
+            }
+            switch ($val['type']) {
+                case 1:
+                    if (empty($val['value'])) {
+                        $result['errormsg'] = '标签不能为空';
+                        return $result;
+                    }
+                    break;
+                case 2:
+                    if (!in_array($val['datetype'], [1,2,3])) {
+                        $result['errormsg'] = '日期类型不正确';
+                        return $result;
+                    }
+                    break;
+                case 3:
+                    if ($val['length'] < 1 || $val['length'] > 9) {
+                        $result['errormsg'] = '增长值位数不正确';
+                        return $result;
+                    }
+                    break;
+            }
         }
+        
+        $result['code'] = 1;
+        $result['errormsg'] = '';
+        return $result;
     }
     
     public static function createFlow()
@@ -138,7 +165,25 @@ class FlowControl
             return ['code' => 0, 'errormsg' => $checkres['errormsg']];
         }
         
+        $flowData['FlowNodes']  = json_encode($_POST['FlowNodes']);
+        $flowData['OrderRule']  = json_encode($_POST['OrderRule']);
+        $flowData['UserID']     = ','.implode(',', $_POST['UserID']).',';
+        $medoo      = \process\Workflow::connectdb();
+        $medoo->pdo->beginTransaction();
+        $medoo->insert('workflow', $flowData);
+        $flowid = $medoo->id();
+        if (!$flowid) {
+            $medoo->pdo->rollBack();
+            return ['code' => -2, 'errormsg' => '创建流程表失败'];
+        }
+        
         /* 流程表单添加 */
+        $createRes  = Form::createDbTable($_POST['From'], $flowid, $flowData['Name']);
+        if ($createRes['code'] != 1) {
+            return ['code' => -3, 'errormsg' => $createRes['errormsg']];
+        }
+        
+        return ['code' => 1, 'errormsg' => ''];
     }
 }
 

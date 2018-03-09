@@ -32,7 +32,7 @@ class Workflow
      */
     public function doFlow($programID, $workflowID)
     {
-        $medoo  = self::connect();
+        $medoo  = self::connectdb();
         
         /* 执行前校验 */
         
@@ -41,11 +41,10 @@ class Workflow
     
     public function startNew()
     {
-        $medoo  = self::connect();
         $post   = filter_input_array(INPUT_POST);
         
         /* 获取流程表单字段 */
-        $workflowID = intval($_POST['WorkflowID']);
+        
         
     }
     
@@ -65,7 +64,7 @@ class Workflow
      * @staticvar object $medoo
      * @return object|\process\tool\Medoo medoo实例
      */
-    public static function connect()
+    public static function connectdb()
     {
         static $medoo = '';
         
