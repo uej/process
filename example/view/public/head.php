@@ -6,14 +6,13 @@ use ez\core\Route;
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>php工作流引擎</title>
+    <title>php工作流程引擎</title>
     <link rel="stylesheet" href="/layui/css/layui.css">
-    <link rel="stylesheet" href="/css/class.css">
 </head>
 <body>
     <div class="layui-layout layui-layout-admin">
         <div class="layui-header">
-            <div class="layui-logo">php工作流引擎</div>
+            <div class="layui-logo">php工作流程引擎</div>
             <ul class="layui-nav layui-layout-left">
                 <li class="layui-nav-item <?php if(CONTROLLER_NAME == 'index') { echo 'layui-this'; } ?>" ><a href="">控制台</a></li>
                 <li class="layui-nav-item <?php if(CONTROLLER_NAME == 'document') { echo 'layui-this'; } ?>"><a href="">文档</a></li>

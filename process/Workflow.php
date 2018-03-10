@@ -66,12 +66,13 @@ class Workflow
      */
     public static function connectdb()
     {
-        static $medoo = '';
+        static $db = '';
         
-        if (!empty($medoo)) {
-            return $medoo;
+        if (!empty($db)) {
+            return $db;
         } else {
-            $medoo  = new tool\Medoo([
+            $config = include(__DIR__ . '/config.php');
+            $db  = new tool\Medoo([
                 'database_type' => $config['dbType'],
                 'database_name' => $config['dbName'],
                 'server'        => $config['dbHost'],
@@ -82,7 +83,7 @@ class Workflow
                 'prefix'        => $config['dbPrefix'],
             ]);
             
-            return $medoo;
+            return $db;
         }
     }
     

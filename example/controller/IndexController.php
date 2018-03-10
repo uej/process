@@ -11,6 +11,10 @@ use ez\core\Route;
 class IndexController extends Controller {
     
     
+    public function tx() {
+        $this->display();
+    }
+    
     /**
      * 我的申请
      * 
@@ -46,7 +50,7 @@ class IndexController extends Controller {
     
     
     /**
-     * 添加流程
+     * 添加流程页
      * 
      * @access public
      */
@@ -54,6 +58,35 @@ class IndexController extends Controller {
         $this->assign('flowtype', \example\model\Flowtype::select('*'));
         $this->display();
     }
+    
+    
+    /**
+     * 执行添加流程
+     * 
+     * @access public
+     */
+    public function addflowgo() {
+        $workflow   = new \process\Workflow();
+//        var_dump($_POST);die;
+        $res    = $workflow->createFlow();
+        if ($res['code'] == 1) {
+            die(json_encode(['code' => 1, 'msg' => '添加流程成功']));
+        } else {
+            die(json_encode($res));
+        }
+    }
+    
+    
+    /**
+     * 发起申请页
+     * 
+     * @access public
+     */
+    public function apply() {
+        
+    }
+    
+    
     
     
 }

@@ -17,7 +17,7 @@ class Form
         5 => ['fieldname' => 'Checkbox', 'name' => '复选框', 'type' => 'varchar', 'length' => 255, 'formtype' => 'input', 'inputtype' => 'checkbox', 'config' => ['textarea', 'direction']],
         6 => ['fieldname' => 'Chooseval', 'name' => '下拉框', 'type' => 'varchar', 'length' => 255, 'formtype' => 'select', 'config' => ['textarea']],
         7 => ['fieldname' => 'Time', 'name' => '时间', 'type' => 'int', 'formtype' => 'input', 'inputtype' => 'text', 'config' => ['timetype']],
-        8 => ['fieldname' => 'Timese', 'name' => '时间区间', 'type' => 'int', 'formtype' => 'input', 'inputtype' => 'text', 'config' => ['timetype']],
+        8 => ['fieldname' => 'TimeBetween', 'name' => '时间区间', 'type' => 'int', 'formtype' => 'input', 'inputtype' => 'text', 'config' => ['timetype']],
         9 => ['fieldname' => 'FileName', 'name' => '上传附件', 'type' => 'varchar',  'length' => 255, 'formtype' => 'input', 'inputtype' => 'file', 'config' => ['placeholder']],
     ];
     
@@ -54,7 +54,7 @@ class Form
                     return $result;
                 }
             }
-            
+                
             $data['TypeID']         = intval($val['fieldtypeid']);
             $data['Type']           = self::$fields[$data['TypeID']]['type'];
             $data['FieldName']      = $val['FieldName'];
@@ -63,10 +63,12 @@ class Form
             $data['FieldTitle']     = htmlspecialchars(trim($val['FieldTitle']));
             $data['FieldNote']      = $data['FieldTitle'];
             $data['Must']           = intval($val['Must']);
-            $data['Placeholder']    = htmlspecialchars(trim($val['Placeholder']));
+            if (!empty($val['Placeholder']))
+                $data['Placeholder']    = htmlspecialchars(trim($val['Placeholder']));
             if (in_array($data['TypeID'], [4,5]))
                 $data['Direction']  = intval($val['Direction']);
-            $data['Value']          = htmlspecialchars(trim($val['Value']));
+            if (in_array($val['fieldtypeid'], [4,5,6]))
+                $data['Value']      = htmlspecialchars(trim($val['Value']));
             if (in_array($data['Type'], [7,8])) {
                 $data['Timetype']   = intval($val['Timetype']);
                 if (!in_array($data['Timetype'], [1,2,3])) {
@@ -75,6 +77,18 @@ class Form
                 }
             }
             $data['WorkflowID'] = $flowid;
+            
+            if ($val['fieldtypeid'] == 8) {
+                $data['FieldName']  = $val['FieldName'] . 'Start';
+                $form[] = $data;
+                $data['FieldName']  = $val['FieldName'] . 'End';
+                $form[] = $data;
+                $data['FieldName']  = $val['FieldName'] . 'Total';
+                $data['FieldTitle'] = $data['FieldNote'] = '总时长(天)';
+                $data['Type']       = 'double';
+                $form[] = $data;
+                continue;
+            }
             $form[] = $data;
         }
         
@@ -98,7 +112,7 @@ class Form
             } else if ($val['Type'] == 'varchar' || $val['Type'] == 'char') {
                 $type   = "{$val['Type']}({$val['FieldLength']})";
             }
-            $sql   .= "`{$val['FieldName']}` $type , $null , COMMENT '{$val['FieldNote']}' ,";
+            $sql   .= "`{$val['FieldName']}` $type  $null COMMENT '{$val['FieldNote']}' ,";
         }
         $sql   .= "PRIMARY KEY (`ID`)) ENGINE = InnoDB CHARSET=utf8mb4 COLLATE utf8mb4_general_ci COMMENT = '{$flowName}流程表单$flowid';";
         $pdoStatement   = $medoo->query($sql);
