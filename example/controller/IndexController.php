@@ -21,6 +21,8 @@ class IndexController extends Controller {
      * @access public
      */
     public function index() {
+        $a['撒打算'] = 'asda';
+        var_dump($a);
         $this->display();
     }
     

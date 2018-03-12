@@ -1,0 +1,9 @@
+2018-03-12 17:54:41 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-12 17:54:41 ErrorLevel:8, E_NOTICE: Undefined variable: html in E:\github\process\ez\core\Model.php at line 388
+2018-03-12 17:54:41 ErrorLevel:2, E_WARNING: explode(): Empty delimiter in E:\github\process\example\view\index\flowlist.php at line 33
+2018-03-12 17:54:41 ErrorLevel:8, E_NOTICE: Array to string conversion in E:\github\process\example\view\index\flowlist.php at line 33
+2018-03-12 17:54:42 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-12 17:54:42 ErrorLevel:8, E_NOTICE: Undefined variable: html in E:\github\process\ez\core\Model.php at line 388
+2018-03-12 17:55:01 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\index.php at line 15
+2018-03-12 17:55:01 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\index.php at line 15
+2018-03-12 17:55:01 ErrorLevel:8, E_NOTICE: Undefined variable: html in E:\github\process\example\view\index\index.php at line 69

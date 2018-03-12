@@ -30,7 +30,7 @@ class Workflow
      * @param type $workflowID
      * @param type $nowflow
      */
-    public function doFlow($programID, $workflowID)
+    public function doFlow($programID, $flowID)
     {
         $medoo  = self::connectdb();
         
@@ -39,23 +39,20 @@ class Workflow
         
     }
     
-    public function startNew()
+    public function startNew($flowID, $data)
     {
-        $post   = filter_input_array(INPUT_POST);
-        
-        /* 获取流程表单字段 */
-        
-        
+        return flow\FlowControl::startNew($flowID, $data);
     }
     
     /**
      * 新建流程
      * 
+     * @param array $data 流程数据
      * @access public
      */
-    public function createFlow()
+    public function createFlow($data)
     {
-        return flow\FlowControl::createFlow();
+        return flow\FlowControl::createFlow($data);
     }
     
     /**
@@ -100,22 +97,21 @@ class Workflow
     /**
      * 创建数据
      * 
-     * @param array $data 传入数据，只有数据库中有该字才会最终生成
+     * @param integer $flowID 流程id
      * @return mixed 生成数据
      * @access public
      */
-    public function create($tableName, $data = [])
+    public static function create($flowID)
     {
-        if (empty($data)) {
-            $data = filter_input_array(INPUT_POST);
-        }
-        if (empty($tableName)) {
+        $data = filter_input_array(INPUT_POST);
+        if (empty($flowID)) {
             return FALSE;
         }
+        $tableName  = "formtable$flowID";
         
         $arr = [];
         
-        $columns = self::connect()->query("SHOW COLUMNS FROM `{$this->config['dbPrefix']}$tableName`")->fetchAll(\PDO::FETCH_ASSOC);
+        $columns = self::connectdb()->query("SHOW COLUMNS FROM `{$this->config['dbPrefix']}$tableName`")->fetchAll(\PDO::FETCH_ASSOC);
         foreach ($columns as $val) {
             $keys[] = $val['Field'];
         }
@@ -131,5 +127,5 @@ class Workflow
             return FALSE;
         }
     }
-    
+
 }

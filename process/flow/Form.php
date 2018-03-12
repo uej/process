@@ -24,6 +24,14 @@ class Form
     public static $fieldstype   = [0,1,2,3,4,5,6,7,8,9];
 
     
+    /**
+     * 添加流程表单数据和创建表单表
+     * 
+     * @param array $formData 表单字段数据
+     * @param integer $flowid 流程id
+     * @param string $flowName 流程名称
+     * @return array 结果
+     */
     public static function createDbTable($formData, $flowid, $flowName)
     {
         $result = ['code' => 0];
@@ -126,5 +134,7 @@ class Form
         $result['errormsg'] = '';
         return $result;
     }
+    
+    
 }
 

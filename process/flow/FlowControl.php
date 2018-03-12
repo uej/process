@@ -36,7 +36,7 @@ class FlowControl
      *              'needtype'  => // 1:且  2:或
      *          ]
      *      ]
-     * 
+     * @return array 检查结果
      * @access public
      */
     public static function checkFlow($flowArr)
@@ -94,7 +94,7 @@ class FlowControl
      *              'length'    => // 增长值最高长度 type为3时有值
      *          ]
      *      ]
-     * 
+     * @return array 检查结果
      * @access public
      */
     public static function checkOrderRule($orderRule)
@@ -138,36 +138,43 @@ class FlowControl
         return $result;
     }
     
-    public static function createFlow()
+    /**
+     * 流程创建
+     * 
+     * @param array $data 流程信息数据
+     * @return array 创建结果
+     * @access public
+     */
+    public static function createFlow($data)
     {
         $flowData   = [
-            'Name'          => filter_input(INPUT_POST, 'Name'),
+            'Name'          => $data['Name'],
             'CreateTime'    => time(),
-            'TypeID'        => intval($_POST['TypeID']),
-            'Introduce'     => htmlspecialchars(filter_input(INPUT_POST, 'Introduce')),
+            'TypeID'        => intval($data['TypeID']),
+            'Introduce'     => $data['Introduce'],
         ];
-        if (!empty($_POST['DepartmentID'])) {
-            $flowData['DepartmentID']   = intval($_POST['DepartmentID']);
+        if (!empty($data['DepartmentID'])) {
+            $flowData['DepartmentID']   = intval($data['DepartmentID']);
         }
-        if (!empty($_POST['RoleID'])) {
-            $flowData['RoleID'] = intval($_POST['RoleID']);
+        if (!empty($data['RoleID'])) {
+            $flowData['RoleID'] = intval($data['RoleID']);
         }
         
         /* 流程数据验证 */
-        $checkres   = self::checkFlow($_POST['FlowNodes']);
+        $checkres   = self::checkFlow($data['FlowNodes']);
         if ($checkres['code'] != 1) {
             return ['code' => 0, 'errormsg' => $checkres['errormsg']];
         }
         
         /* 编号规则验证 */
-        $checkres   = self::checkOrderRule($_POST['OrderRule']);
+        $checkres   = self::checkOrderRule($data['OrderRule']);
         if ($checkres['code'] != 1) {
             return ['code' => 0, 'errormsg' => $checkres['errormsg']];
         }
         
-        $flowData['FlowNodes']  = json_encode($_POST['FlowNodes']);
-        $flowData['OrderRule']  = json_encode($_POST['OrderRule']);
-        $flowData['UserID']     = ','.implode(',', $_POST['UserID']).',';
+        $flowData['FlowNodes']  = json_encode($data['FlowNodes']);
+        $flowData['OrderRule']  = json_encode($data['OrderRule']);
+        $flowData['UserID']     = ','.implode(',', $data['UserID']).',';
         $medoo      = \process\Workflow::connectdb();
         $medoo->pdo->beginTransaction();
         $medoo->insert('workflow', $flowData);
@@ -178,12 +185,75 @@ class FlowControl
         }
         
         /* 流程表单添加 */
-        $createRes  = Form::createDbTable($_POST['From'], $flowid, $flowData['Name']);
+        $createRes  = Form::createDbTable($data['From'], $flowid, $flowData['Name']);
         if ($createRes['code'] != 1) {
             return ['code' => -3, 'errormsg' => $createRes['errormsg']];
         }
         
         return ['code' => 1, 'errormsg' => ''];
     }
+    
+    
+    public static function startNew($flowID, $userID, $data)
+    {
+        $medoo  = \process\Workflow::connectdb();
+        
+        /* 验证流程表单完整性 */
+        $field  = $medoo->select('*', ['WorkflowID' => $flowID]);
+        foreach ($field as $val) {
+            if ($val['Must'] == 1) {
+                if (
+                    empty(trim($data[$val['FieldName']])) &&
+                    $data[$val['FieldName']] !== 0 &&
+                    $data[$val['FieldName']] !== 0.0 &&
+                    $data[$val['FieldName']] !== '0'
+                ) {
+                    return ['code' => 0, 'errormsg' => "{$val['FieldTitle']}为必填"];
+                }
+            }
+            if (!empty(Form::$fields[$val['TypeID']]['pattern'])) {
+                if (!preg_match(Form::$fields[$val['TypeID']]['pattern'], $data[$val['FieldName']])) {
+                    return ['code' => 0, 'errormsg' => "{$val['FieldTitle']}格式不正确"];
+                }
+            }
+            if ($val['TypeID'] == 7 || $val['TypeID'] == 8) {
+                $data[$val['FieldName']]    = strtotime($data[$val['FieldName']]);
+            }
+        }
+        
+        $medoo->pdo->beginTransaction();
+        if ($medoo->insert("formtable$flowID", $data)->errorCode() !== '00000') {
+            $medoo->pdo->rollBack();
+            return ['code' => -2, 'errormsg' => "数据保存失败"];
+        }
+        $dataID = $medoo->id();
+        
+        $program    = [
+            'UserID'        => $userID,
+            'WorkflowID'    => $flowID,
+            'CreateTime'    => time(),
+            'FormID'        => $dataID,
+            'NowNode'       => 0,
+        ];
+        
+        /* 计算审核人id */
+        
+        
+    }
+    
+    
+    public static function getCheck($flowID, $nowNode = '', $checkUserID = '')
+    {
+        $medoo  = \process\Workflow::connectdb();
+        
+        if ($nowNode === '') {
+            $flowdata   = $medoo->get(['OrderRule', 'FlowNodes'], ['ID' => $flowID]);
+            $flowNodes  = json_decode($flowdata['FlowNodes'], TRUE);
+            $orderRule  = json_decode($flowdata['OrderRule'], TRUE);
+            
+        }
+    }
+    
+    
 }
 
