@@ -250,128 +250,89 @@ class FlowControl
     }
     
     
-    public static function getCheck($flowID, $userID, $data, $nowNode = '', $checkUserID = '')
+    public static function getNewCheck($flowID, $userID, $data, $nowNode = 0)
     {
-        $medoo  = \process\Workflow::connectdb();
-        
-        /* 新发起的审批项 */
-        if ($nowNode === '') {
-            $flowdata   = $medoo->get(['OrderRule', 'FlowNodes'], ['ID' => $flowID]);
-            $flowNodes  = json_decode($flowdata['FlowNodes'], TRUE);
-            $orderRule  = json_decode($flowdata['OrderRule'], TRUE);
-            
-            if ($flowNodes[0]['need'] == 1) {
-                
-                /* 找出该流程的审批人员 */
-                if (empty($flowNodes[0]['userid'])) {
-                    if (!empty($flowNodes[0]['department'])) {
-                        $where['DepartmentID']  = $flowNodes[0]['department'];
-                    }
-                    if (!empty($flowNodes[0]['role'])) {
-                        $where['RoleID']  = $flowNodes[0]['role'];
-                    }
-                    if ($flowNodes[0]['self'] == 1) {
-                        $departmentID   = $medoo->get('user', 'DepartmentID', ['ID' => $userID]);
-                        $nowCheckUser   = $medoo->select('user', 'ID', ['DepartmentID' => $departmentID, 'RoleID' => $flowNodes[0]['role']]);
-                        return [
-                            'nowNode'       => 0,
-                            'checkUserID'   => ','. implode(',', $nowCheckUser) .',',
-                        ];
-                    }
-                    $nowCheckUser   = $medoo->select('user', 'ID', $where);
-                    return [
-                        'nowNode'       => 0,
-                        'checkUserID'   => ','. implode(',', $nowCheckUser) .',',
-                    ];
-                    
-                } else {
-                    return [
-                        'nowNode'       => 0,
-                        'checkUserID'   => ','. $flowNodes[0]['userid'] .',',
-                    ];
-                }
-                
-            } else if (is_array($flowNodes[0]['need'])) {
-                
-                /* 确定流程是否需要 */
-                foreach ($flowNodes[0]['need'] as $val) {
-                    if ($val['type'] == 1) {
-                        if ($data[$val['field']] > $val['value']) {
-                            $need   = 1;
-                            if ($flowNodes[0]['needtype'] == 2) {
-                                break;
-                            }
-                        } else {
-                            $need   = 0;
-                            if ($flowNodes[0]['needtype'] == 1) {
-                                break;
-                            }
-                        }
-                    } else if ($val['type'] == 2) {
-                        if ($data[$val['field']] == $val['value']) {
-                            $need   = 1;
-                            if ($flowNodes[0]['needtype'] == 2) {
-                                break;
-                            }
-                        } else {
-                            $need   = 0;
-                            if ($flowNodes[0]['needtype'] == 1) {
-                                break;
-                            }
-                        }
-                    } else if ($val['type'] == 3) {
-                        if ($data[$val['field']] < $val['value']) {
-                            $need   = 1;
-                            if ($flowNodes[0]['needtype'] == 2) {
-                                break;
-                            }
-                        } else {
-                            $need   = 0;
-                            if ($flowNodes[0]['needtype'] == 1) {
-                                break;
-                            }
-                        }
-                    }
-                }
-                if ($need == 1) {
-                    /* 找出该流程的审批人员 */
-                    if (empty($flowNodes[0]['userid'])) {
-                        if (!empty($flowNodes[0]['department'])) {
-                            $where['DepartmentID']  = $flowNodes[0]['department'];
-                        }
-                        if (!empty($flowNodes[0]['role'])) {
-                            $where['RoleID']  = $flowNodes[0]['role'];
-                        }
-                        if ($flowNodes[0]['self'] == 1) {
-                            $departmentID   = $medoo->get('user', 'DepartmentID', ['ID' => $userID]);
-                            $nowCheckUser   = $medoo->select('user', 'ID', ['DepartmentID' => $departmentID, 'RoleID' => $flowNodes[0]['role']]);
-                            return [
-                                'nowNode'       => 0,
-                                'checkUserID'   => ','. implode(',', $nowCheckUser) .',',
-                            ];
-                        }
-                        $nowCheckUser   = $medoo->select('user', 'ID', $where);
-                        return [
-                            'nowNode'       => 0,
-                            'checkUserID'   => ','. implode(',', $nowCheckUser) .',',
-                        ];
+        $medoo      = \process\Workflow::connectdb();
+        $flowdata   = $medoo->get(['OrderRule', 'FlowNodes'], ['ID' => $flowID]);
+        $flowNodes  = json_decode($flowdata['FlowNodes'], TRUE);
+        $orderRule  = json_decode($flowdata['OrderRule'], TRUE);
 
+        if ($flowNodes[$nowNode]['need'] == 1) {
+            return self::getNewNodeAndCheckUserAndOrdernum($flowNodes, $orderRule, $userID, $nowNode);
+        } else if (is_array($flowNodes[0]['need'])) {
+
+            /* 确定流程是否需要 */
+            foreach ($flowNodes[0]['need'] as $val) {
+                if ($val['type'] == 1) {
+                    if ($data[$val['field']] > $val['value']) {
+                        $need   = 1;
+                        if ($flowNodes[0]['needtype'] == 2) {
+                            break;
+                        }
                     } else {
-                        return [
-                            'nowNode'       => 0,
-                            'checkUserID'   => ','. $flowNodes[0]['userid'] .',',
-                        ];
+                        $need   = 0;
+                        if ($flowNodes[0]['needtype'] == 1) {
+                            break;
+                        }
                     }
-                } else {
-                    return self::getCheck($flowID, $userID, $data, intval($nowNode)+1);
+                } else if ($val['type'] == 2) {
+                    if ($data[$val['field']] == $val['value']) {
+                        $need   = 1;
+                        if ($flowNodes[0]['needtype'] == 2) {
+                            break;
+                        }
+                    } else {
+                        $need   = 0;
+                        if ($flowNodes[0]['needtype'] == 1) {
+                            break;
+                        }
+                    }
+                } else if ($val['type'] == 3) {
+                    if ($data[$val['field']] < $val['value']) {
+                        $need   = 1;
+                        if ($flowNodes[0]['needtype'] == 2) {
+                            break;
+                        }
+                    } else {
+                        $need   = 0;
+                        if ($flowNodes[0]['needtype'] == 1) {
+                            break;
+                        }
+                    }
                 }
+            }
+            if ($need == 1) {
+                return self::getNewNodeAndCheckUserAndOrdernum($flowNodes, $orderRule, $userID, $nowNode);
+            } else {
+                return self::getCheck($flowID, $userID, $data, intval($nowNode)+1);
             }
         }
     }
     
     
-    public static function getNodeAndCheckUser($flowNodes, $flowID, $userID, $nowNode, $checkUserID) {
+    public static function getNewNodeAndCheckUserAndOrdernum($flowNodes, $orderRule, $userID, $nowNode) {
         $nowNode    = intval($nowNode);
+        $medoo      = \process\Workflow::connectdb();
+        
+        /* 编号计算 */
+        $orderNum   = '';
+        foreach ($orderRule as $val) {
+            if ($val['type'] == 1) {
+                $orderNum   .= $val['value'];
+            }
+            if ($val['type'] == 2) {
+                if ($val['datetype'] == 1) {
+                    $orderNum   .= date('Y');
+                } elseif ($val['datetype'] == 2) {
+                    $orderNum   .= date('Ym');
+                } elseif ($val['datetype'] == 3) {
+                    $orderNum   .= date('Ymd');
+                }
+            }
+            if ($val['type'] == 3) {
+                $medoo->count('program', ['']);
+            }
+        }
         
         /* 找出该流程的审批人员 */
         if (empty($flowNodes[$nowNode]['userid'])) {
