@@ -18,7 +18,7 @@ class FlowControl
      *              'type'  => // 1:会签  2:或签
      *              'role'  => // 角色id
      *              'department => // 部门id
-     *              'userid'=> // 审批人id
+     *              'user'=> // 审批人id
      *              'self'  => // 1：本部门对应角色签批
      *              'copy'  => // 抄送人id
      *              'need'  => [
@@ -53,7 +53,7 @@ class FlowControl
                 $result['errormsg'] = '流程审批节点类型错误';
                 return $result;
             }
-            if (empty($val['userid']) && empty($val['departmentid']) && empty($val['roleid'])) {
+            if (empty($val['user']) && empty($val['department']) && empty($val['role'])) {
                 $result['errormsg'] = '流程节点审批人不能为空';
                 return $result;
             }
@@ -198,10 +198,18 @@ class FlowControl
             return ['code' => -3, 'errormsg' => $createRes['errormsg']];
         }
         
+        $medoo->pdo->commit();
         return ['code' => 1, 'errormsg' => ''];
     }
     
-    
+    /**
+     * 开始一个新的流程
+     * 
+     * @param integer $flowID 流程id
+     * @param integer $userID 申请人id
+     * @param array $data 申请表单数据
+     * @return array 结果数据
+     */
     public static function startNew($flowID, $userID, $data)
     {
         $medoo  = \process\Workflow::connectdb();
@@ -241,19 +249,51 @@ class FlowControl
             'WorkflowID'    => $flowID,
             'CreateTime'    => time(),
             'FormID'        => $dataID,
-            'NowNode'       => 0,
         ];
         
-        /* 计算审核人id */
+        $checkdata  = self::getNewCheck($flowID, $userID, $data);
+        if ((empty($checkdata['nowNode']) && $checkdata['nowNode'] !== 0) || empty($checkdata['orderNum']) || empty($checkdata['checkUserID'])) {
+            $medoo->pdo->rollBack();
+            return [
+                'code'      => -3,
+                'errormsg'  => '流程处理失败',
+            ];
+        }
         
+        $program['OrderNum']    = $checkdata['orderNum'];
+        $program['NowNode']     = $checkdata['nowNode'];
+        $program['CheckUserID'] = $checkdata['checkUserID'];
+        $program['CopyUserID']  = $checkdata['copyUserID'];
+        if ($medoo->insert('program', $program)->errorCode() === '00000') {
+            $programid  = $medoo->id();
+            $medoo->pdo->commit();
+            return [
+                'code'      => 1,
+                'programid' => $programid,
+            ];
+        } else {
+            $medoo->pdo->rollBack();
+            return [
+                'code'      => -4,
+                'errormsg'  => '提交失败',
+            ];
+        }
         
     }
     
-    
-    public static function getNewCheck($flowID, $userID, $data, $nowNode = 0)
+    /**
+     * 流程计算
+     * 
+     * @param integer $flowID 流程id
+     * @param integer $userID 用户id
+     * @param array $data 表单数据
+     * @param integer $nowNode 节点
+     * @return array 流程数据
+     */
+    private static function getNewCheck($flowID, $userID, $data, $nowNode = 0)
     {
         $medoo      = \process\Workflow::connectdb();
-        $flowdata   = $medoo->get(['OrderRule', 'FlowNodes'], ['ID' => $flowID]);
+        $flowdata   = $medoo->get('workflow', ['OrderRule', 'FlowNodes'], ['ID' => $flowID]);
         $flowNodes  = json_decode($flowdata['FlowNodes'], TRUE);
         $orderRule  = json_decode($flowdata['OrderRule'], TRUE);
 
@@ -309,10 +349,22 @@ class FlowControl
         }
     }
     
-    
-    public static function getNewNodeAndCheckUserAndOrdernum($flowNodes, $orderRule, $userID, $nowNode) {
+    /**
+     * 计算新申请的应到节点、审批人、申请编号
+     * 
+     * @param array $flowNodes 流程节点数组
+     * @param array $orderRule 编号生成规则
+     * @param integer $userID 申请人id
+     * @param integer $nowNode 当前节点
+     * @return array 应到节点、审批人、申请编号
+     */
+    private static function getNewNodeAndCheckUserAndOrdernum($flowNodes, $orderRule, $userID, $nowNode) {
         $nowNode    = intval($nowNode);
         $medoo      = \process\Workflow::connectdb();
+        $resdata    = [];
+        if (!empty($flowNodes[$nowNode]['copy'])) {
+            $resdata['copyUserID']  = ',' . $flowNodes[$nowNode]['copy'] . ',';
+        }
         
         /* 编号计算 */
         $orderNum   = '';
@@ -323,19 +375,36 @@ class FlowControl
             if ($val['type'] == 2) {
                 if ($val['datetype'] == 1) {
                     $orderNum   .= date('Y');
+                    $datetype   = 1;
                 } elseif ($val['datetype'] == 2) {
                     $orderNum   .= date('Ym');
+                    $datetype   = 2;
                 } elseif ($val['datetype'] == 3) {
                     $orderNum   .= date('Ymd');
+                    $datetype   = 3;
                 }
             }
             if ($val['type'] == 3) {
-                $medoo->count('program', ['']);
+                if (empty($datetype) || $datetype == 3) {
+                    $startTime  = strtotime(date('Y-m-d'));
+                    $endTime    = strtotime(date('Y-m-d'). ' 23:59:59');
+                } else if ($datetype == 1) {
+                    $startTime  = strtotime(date('Y'). '-01-01');
+                    $endTime    = strtotime(date('Y'). '-12-31 23:59:59');
+                } else if ($datetype == 2) {
+                    $startTime  = strtotime(date('Y-m'). '-01');
+                    $endTime    = strtotime(date('Y-m'). "-01 +1 month -1 second");
+                }
+                $total  = $medoo->count('program', ['CreateTime[>=]' => $startTime, 'EndTime[<=]' => $endTime]);
+                $total  = $total + 1;
+                $num    = sprintf("%0{$val['length']}d", $total);
+                $orderNum .= $num;
             }
         }
         
+        
         /* 找出该流程的审批人员 */
-        if (empty($flowNodes[$nowNode]['userid'])) {
+        if (empty($flowNodes[$nowNode]['user'])) {
             if (!empty($flowNodes[$nowNode]['department'])) {
                 $where['DepartmentID']  = $flowNodes[$nowNode]['department'];
             }
@@ -345,24 +414,29 @@ class FlowControl
             if ($flowNodes[$nowNode]['self'] == 1) {
                 $departmentID   = $medoo->get('user', 'DepartmentID', ['ID' => $userID]);
                 $nowCheckUser   = $medoo->select('user', 'ID', ['DepartmentID' => $departmentID, 'RoleID' => $flowNodes[$nowNode]['role']]);
-                return [
-                    'nowNode'       => 0,
-                    'checkUserID'   => ','. implode(',', $nowCheckUser) .',',
-                ];
+                
+                $resdata['nowNode']     = $nowNode;
+                $resdata['checkUserID'] = ','. implode(',', $nowCheckUser) .',';
+                $resdata['orderNum']    = $orderNum;
+                return $resdata;
             }
             $nowCheckUser   = $medoo->select('user', 'ID', $where);
-            return [
-                'nowNode'       => 0,
-                'checkUserID'   => ','. implode(',', $nowCheckUser) .',',
-            ];
+            
+            $resdata['nowNode']     = $nowNode;
+            $resdata['checkUserID'] = ','. implode(',', $nowCheckUser) .',';
+            $resdata['orderNum']    = $orderNum;
+            return $resdata;
 
         } else {
-            return [
-                'nowNode'       => 0,
-                'checkUserID'   => ','. $flowNodes[$nowNode]['userid'] .',',
-            ];
+            $resdata['nowNode']     = $nowNode;
+            $resdata['checkUserID'] = ','. $flowNodes[$nowNode]['user'] .',';
+            $resdata['orderNum']    = $orderNum;
+            return $resdata;
         }
     }
+    
+    
+    
     
     
 }

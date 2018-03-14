@@ -71,10 +71,13 @@ class IndexController extends Controller {
         $workflow   = new \process\Workflow();
 //        var_dump($_POST);die;
         $res    = $workflow->createFlow();
+        
+        var_dump($res);
         if ($res['code'] == 1) {
-            die(json_encode(['code' => 1, 'msg' => '添加流程成功']));
+            
+//            die(json_encode(['code' => 1, 'msg' => '添加流程成功']));
         } else {
-            die(json_encode($res));
+//            die(json_encode($res));
         }
     }
     
@@ -86,6 +89,24 @@ class IndexController extends Controller {
      */
     public function apply() {
         
+    }
+    
+    
+    /**
+     * 发起流程
+     * 
+     * @access public
+     */
+    public function doapply() {
+        $workflow   = new \process\Workflow();
+        $res        = $workflow->startNew(1, 2, [
+            'Content1'  => '阿斯顿加啊卡机双打刻录机打开asdada按时大大',
+            'TimeBetween1Start' => strtotime("2018-03-14 09:00"),
+            'TimeBetween1End'   => strtotime('2018-03-15 18:00'),
+            'TimeBetween1Total' => 2,
+        ]);
+        
+        dump($res);
     }
     
     

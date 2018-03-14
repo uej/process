@@ -1,0 +1,24 @@
+2018-03-14 17:09:37 ErrorLevel:8, E_NOTICE: Undefined index: self in E:\github\process\process\flow\FlowControl.php at line 64
+2018-03-14 17:10:19 ErrorLevel:8, E_NOTICE: Undefined index: self in E:\github\process\process\flow\FlowControl.php at line 64
+2018-03-14 17:10:19 ErrorLevel:2, E_WARNING: implode(): Invalid arguments passed in E:\github\process\process\flow\FlowControl.php at line 185
+2018-03-14 17:12:57 ErrorLevel:2, E_WARNING: Missing argument 1 for process\Workflow::createFlow(), called in E:\github\process\example\controller\IndexController.php on line 73 and defined in E:\github\process\process\Workflow.php at line 53
+2018-03-14 17:12:57 ErrorLevel:8, E_NOTICE: Undefined variable: data in E:\github\process\process\Workflow.php at line 55
+2018-03-14 17:22:42 ErrorLevel:2, E_WARNING: preg_match() expects parameter 2 to be string, array given in E:\github\process\process\tool\Medoo.php at line 882
+2018-03-14 17:22:42 ErrorLevel:8, E_NOTICE: Array to string conversion in E:\github\process\process\tool\Medoo.php at line 399
+2018-03-14 17:24:38 ErrorLevel:2, E_WARNING: preg_match() expects parameter 2 to be string, array given in E:\github\process\process\tool\Medoo.php at line 882
+2018-03-14 17:24:38 ErrorLevel:8, E_NOTICE: Array to string conversion in E:\github\process\process\tool\Medoo.php at line 399
+2018-03-14 17:27:20 ErrorLevel:2, E_WARNING: preg_match() expects parameter 2 to be string, array given in E:\github\process\process\tool\Medoo.php at line 882
+2018-03-14 17:27:20 ErrorLevel:8, E_NOTICE: Array to string conversion in E:\github\process\process\tool\Medoo.php at line 399
+2018-03-14 17:27:30 ErrorLevel:2, E_WARNING: preg_match() expects parameter 2 to be string, array given in E:\github\process\process\tool\Medoo.php at line 882
+2018-03-14 17:27:30 ErrorLevel:8, E_NOTICE: Array to string conversion in E:\github\process\process\tool\Medoo.php at line 399
+2018-03-14 17:29:15 ErrorLevel:2, E_WARNING: preg_match() expects parameter 2 to be string, array given in E:\github\process\process\tool\Medoo.php at line 882
+2018-03-14 17:29:15 ErrorLevel:8, E_NOTICE: Array to string conversion in E:\github\process\process\tool\Medoo.php at line 399
+2018-03-14 17:29:34 ErrorLevel:2, E_WARNING: preg_match() expects parameter 2 to be string, array given in E:\github\process\process\tool\Medoo.php at line 882
+2018-03-14 17:29:34 ErrorLevel:8, E_NOTICE: Array to string conversion in E:\github\process\process\tool\Medoo.php at line 399
+2018-03-14 17:29:38 ErrorLevel:2, E_WARNING: preg_match() expects parameter 2 to be string, array given in E:\github\process\process\tool\Medoo.php at line 882
+2018-03-14 17:29:38 ErrorLevel:8, E_NOTICE: Array to string conversion in E:\github\process\process\tool\Medoo.php at line 399
+2018-03-14 17:30:56 ErrorLevel:2, E_WARNING: preg_match() expects parameter 2 to be string, array given in E:\github\process\process\tool\Medoo.php at line 882
+2018-03-14 17:30:56 ErrorLevel:8, E_NOTICE: Array to string conversion in E:\github\process\process\tool\Medoo.php at line 399
+2018-03-14 17:44:02 ErrorLevel:8, E_NOTICE: Undefined index: copyUserID in E:\github\process\process\flow\FlowControl.php at line 266
+2018-03-14 17:50:14 ErrorLevel:8, E_NOTICE: Undefined index: copyUserID in E:\github\process\process\flow\FlowControl.php at line 266
+2018-03-14 17:51:59 ErrorLevel:8, E_NOTICE: Undefined index: copyUserID in E:\github\process\process\flow\FlowControl.php at line 266

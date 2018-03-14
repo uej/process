@@ -39,9 +39,9 @@ class Workflow
         
     }
     
-    public function startNew($flowID, $data)
+    public function startNew($flowID, $userID, $data)
     {
-        return flow\FlowControl::startNew($flowID, $data);
+        return flow\FlowControl::startNew($flowID, $userID, $data);
     }
     
     /**
