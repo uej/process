@@ -19,26 +19,32 @@ class Workflow
      * 
      * @access public
      */
-    public function __construct() {
+    public function __construct()
+    {
         $this->config   = include(__DIR__ . '/config.php');
     }
     
     /**
      * 流程进行
      * 
-     * @param type $programID
-     * @param type $workflowID
-     * @param type $nowflow
+     * @param integer $programID 申请项目id
+     * @param integer $userID 审批人id
+     * @param array $data 审批数据
+     * @return type 处理结果
      */
-    public function doFlow($programID, $flowID)
+    public function doFlow($programID, $userID, $data)
     {
-        $medoo  = self::connectdb();
-        
-        /* 执行前校验 */
-        
-        
+        return flow\FlowControl::doflow($programID, $pass, $userID, $data);
     }
     
+    /**
+     * 新的申请
+     * 
+     * @param integer $flowID 流程id
+     * @param integer $userID 申请用户id
+     * @param array $data 申请表单数据
+     * @return array 处理结果
+     */
     public function startNew($flowID, $userID, $data)
     {
         return flow\FlowControl::startNew($flowID, $userID, $data);

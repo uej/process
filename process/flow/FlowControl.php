@@ -182,7 +182,9 @@ class FlowControl
         
         $flowData['FlowNodes']  = json_encode($data['FlowNodes']);
         $flowData['OrderRule']  = json_encode($data['OrderRule']);
-        $flowData['UserID']     = ','.implode(',', $data['UserID']).',';
+        if (!empty($data['UserID']))
+            $flowData['UserID'] = ','.implode(',', $data['UserID']).',';
+        
         $medoo      = \process\Workflow::connectdb();
         $medoo->pdo->beginTransaction();
         $medoo->insert('workflow', $flowData);
@@ -358,7 +360,8 @@ class FlowControl
      * @param integer $nowNode 当前节点
      * @return array 应到节点、审批人、申请编号
      */
-    private static function getNewNodeAndCheckUserAndOrdernum($flowNodes, $orderRule, $userID, $nowNode) {
+    private static function getNewNodeAndCheckUserAndOrdernum($flowNodes, $orderRule, $userID, $nowNode)
+    {
         $nowNode    = intval($nowNode);
         $medoo      = \process\Workflow::connectdb();
         $resdata    = [];
@@ -436,6 +439,49 @@ class FlowControl
     }
     
     
+    public static function doflow($programID, $userID, $data)
+    {
+        $medoo      = \process\Workflow::connectdb();
+        $program    = $medoo->get('program', '*', ['ID' => $programID]);
+        
+        /* 审批前验证 */
+        if (strpos($program['CheckUserID'], ",$userID,") === FALSE) {
+            return [
+                'code'      => 0,
+                'errormsg'  => '审核人id错误',
+            ];
+        }
+        if ($program['IsEdit'] == 1) {
+            return [
+                'code'      => 0,
+                'errormsg'  => '该阶段不能审核',
+            ];
+        }
+        if ($program['Status'] != 1) {
+            return [
+                'code'      => 0,
+                'errormsg'  => '审批项不存在',
+            ];
+        }
+        
+        $flowNodes  = $medoo->get('workflow', 'FlowNodes', ['ID' => $program['WorkflowID']]);
+        $formdata   = $medoo->get("formtable{$program['WorkflowID']}", '*', ['ID' => $program['FormID']]);
+        $flowNodes  = json_decode($flowNodes, true);
+        
+        /* 当前审批 */
+        if ($data['Pass'] == 1) {
+            if ($flowNodes[$program['NowNode']]['type'] == 1) {
+                
+            } else {
+                
+            }
+        } elseif ($data['Pass'] == 2) {
+            
+        } elseif ($data['Pass'] == 3) {
+            
+        }
+        
+    }
     
     
     
