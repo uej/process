@@ -34,7 +34,7 @@ class Workflow
      */
     public function doFlow($programID, $userID, $data)
     {
-        return flow\FlowControl::doflow($programID, $pass, $userID, $data);
+        return flow\FlowControl::doflow($programID, $userID, $data);
     }
     
     /**

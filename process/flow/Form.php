@@ -116,7 +116,7 @@ class Form
             $null   = $val['Must'] == 1 ? 'NOT NULL' : 'NULL';
             
             if ($val['Type'] == 'int' || $val['Type'] == 'text') {
-                $type   = "INT";
+                $type   = $val['Type'];
             } else if ($val['Type'] == 'varchar' || $val['Type'] == 'char') {
                 $type   = "{$val['Type']}({$val['FieldLength']})";
             }

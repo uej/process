@@ -1,0 +1,79 @@
+2018-03-15 10:32:43 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\index.php at line 15
+2018-03-15 10:32:43 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\index.php at line 15
+2018-03-15 10:32:43 ErrorLevel:8, E_NOTICE: Undefined variable: html in E:\github\process\example\view\index\index.php at line 69
+2018-03-15 10:33:04 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\index.php at line 15
+2018-03-15 10:33:04 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\index.php at line 15
+2018-03-15 10:33:04 ErrorLevel:8, E_NOTICE: Undefined variable: html in E:\github\process\example\view\index\index.php at line 69
+2018-03-15 10:33:12 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-15 10:33:12 ErrorLevel:8, E_NOTICE: Undefined variable: html in E:\github\process\ez\core\Model.php at line 388
+2018-03-15 10:33:13 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-15 10:33:14 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-15 10:33:14 ErrorLevel:8, E_NOTICE: Undefined variable: html in E:\github\process\ez\core\Model.php at line 388
+2018-03-15 10:33:15 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-15 10:33:15 ErrorLevel:8, E_NOTICE: Undefined variable: html in E:\github\process\ez\core\Model.php at line 388
+2018-03-15 10:33:16 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-15 10:33:16 ErrorLevel:8, E_NOTICE: Undefined variable: html in E:\github\process\ez\core\Model.php at line 388
+2018-03-15 10:33:17 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-15 10:33:17 ErrorLevel:8, E_NOTICE: Undefined variable: html in E:\github\process\ez\core\Model.php at line 388
+2018-03-15 10:33:17 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-15 10:33:17 ErrorLevel:8, E_NOTICE: Undefined variable: html in E:\github\process\ez\core\Model.php at line 388
+2018-03-15 10:33:18 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-15 10:33:18 ErrorLevel:8, E_NOTICE: Undefined variable: html in E:\github\process\ez\core\Model.php at line 388
+2018-03-15 10:33:19 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-15 10:33:19 ErrorLevel:8, E_NOTICE: Undefined variable: html in E:\github\process\ez\core\Model.php at line 388
+2018-03-15 10:33:19 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-15 10:33:19 ErrorLevel:8, E_NOTICE: Undefined variable: html in E:\github\process\ez\core\Model.php at line 388
+2018-03-15 10:33:21 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-15 10:33:21 ErrorLevel:8, E_NOTICE: Undefined variable: html in E:\github\process\ez\core\Model.php at line 388
+2018-03-15 10:33:21 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-15 10:33:21 ErrorLevel:8, E_NOTICE: Undefined variable: html in E:\github\process\ez\core\Model.php at line 388
+2018-03-15 10:33:21 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-15 10:33:22 ErrorLevel:8, E_NOTICE: Undefined variable: html in E:\github\process\ez\core\Model.php at line 388
+2018-03-15 10:33:22 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-15 10:33:22 ErrorLevel:8, E_NOTICE: Undefined variable: html in E:\github\process\ez\core\Model.php at line 388
+2018-03-15 10:33:22 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-15 10:33:22 ErrorLevel:8, E_NOTICE: Undefined variable: html in E:\github\process\ez\core\Model.php at line 388
+2018-03-15 10:33:22 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-15 10:33:22 ErrorLevel:8, E_NOTICE: Undefined variable: html in E:\github\process\ez\core\Model.php at line 388
+2018-03-15 10:33:22 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-15 10:33:22 ErrorLevel:8, E_NOTICE: Undefined variable: html in E:\github\process\ez\core\Model.php at line 388
+2018-03-15 10:33:23 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-15 10:33:23 ErrorLevel:8, E_NOTICE: Undefined variable: html in E:\github\process\ez\core\Model.php at line 388
+2018-03-15 10:33:24 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-15 10:33:24 ErrorLevel:8, E_NOTICE: Undefined variable: html in E:\github\process\ez\core\Model.php at line 388
+2018-03-15 10:33:25 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-15 10:33:25 ErrorLevel:8, E_NOTICE: Undefined variable: html in E:\github\process\ez\core\Model.php at line 388
+2018-03-15 10:33:25 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-15 10:33:25 ErrorLevel:8, E_NOTICE: Undefined variable: html in E:\github\process\ez\core\Model.php at line 388
+2018-03-15 10:33:25 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-15 10:33:25 ErrorLevel:8, E_NOTICE: Undefined variable: html in E:\github\process\ez\core\Model.php at line 388
+2018-03-15 10:33:25 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-15 10:33:25 ErrorLevel:8, E_NOTICE: Undefined variable: html in E:\github\process\ez\core\Model.php at line 388
+2018-03-15 10:33:26 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-15 10:33:26 ErrorLevel:8, E_NOTICE: Undefined variable: html in E:\github\process\ez\core\Model.php at line 388
+2018-03-15 10:33:26 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-15 10:33:26 ErrorLevel:8, E_NOTICE: Undefined variable: html in E:\github\process\ez\core\Model.php at line 388
+2018-03-15 10:33:30 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-15 10:34:35 ErrorLevel:8, E_NOTICE: Undefined index: self in E:\github\process\process\flow\FlowControl.php at line 64
+2018-03-15 10:38:24 ErrorLevel:8, E_NOTICE: Undefined variable: flow in E:\github\process\example\controller\IndexController.php at line 135
+2018-03-15 10:38:27 ErrorLevel:8, E_NOTICE: Undefined index: checkUserID in E:\github\process\process\flow\FlowControl.php at line 274
+2018-03-15 10:38:27 ErrorLevel:8, E_NOTICE: Undefined index: copyUserID in E:\github\process\process\flow\FlowControl.php at line 275
+2018-03-15 10:41:51 ErrorLevel:8, E_NOTICE: Undefined index: checkUserID in E:\github\process\process\flow\FlowControl.php at line 274
+2018-03-15 10:41:51 ErrorLevel:8, E_NOTICE: Undefined index: copyUserID in E:\github\process\process\flow\FlowControl.php at line 275
+2018-03-15 10:44:15 ErrorLevel:8, E_NOTICE: Undefined index: checkUserID in E:\github\process\process\flow\FlowControl.php at line 274
+2018-03-15 10:44:15 ErrorLevel:8, E_NOTICE: Undefined index: copyUserID in E:\github\process\process\flow\FlowControl.php at line 275
+2018-03-15 11:01:57 ErrorLevel:8, E_NOTICE: Undefined index: self in E:\github\process\process\flow\FlowControl.php at line 64
+2018-03-15 11:04:21 ErrorLevel:8, E_NOTICE: Undefined index: checkUserID in E:\github\process\process\flow\FlowControl.php at line 274
+2018-03-15 11:04:21 ErrorLevel:8, E_NOTICE: Undefined index: copyUserID in E:\github\process\process\flow\FlowControl.php at line 275
+2018-03-15 12:08:48 ErrorLevel:8, E_NOTICE: Undefined variable: flow in E:\github\process\example\controller\IndexController.php at line 135
+2018-03-15 15:22:28 ErrorLevel:8, E_NOTICE: Undefined index: checkUserID in E:\github\process\process\flow\FlowControl.php at line 274
+2018-03-15 15:22:28 ErrorLevel:8, E_NOTICE: Undefined index: copyUserID in E:\github\process\process\flow\FlowControl.php at line 275
+2018-03-15 19:21:46 ErrorLevel:8, E_NOTICE: Undefined index: File in E:\github\process\process\flow\FlowControl.php at line 522
+2018-03-15 19:21:46 ErrorLevel:8, E_NOTICE: Undefined index: self in E:\github\process\process\flow\FlowControl.php at line 654
+2018-03-15 19:21:46 ErrorLevel:8, E_NOTICE: Undefined index: checkRoleID in E:\github\process\process\flow\FlowControl.php at line 724
+2018-03-15 19:21:46 ErrorLevel:8, E_NOTICE: Undefined index: checkDepartmentID in E:\github\process\process\flow\FlowControl.php at line 725
+2018-03-15 19:21:46 ErrorLevel:2, E_WARNING: implode(): Invalid arguments passed in E:\github\process\process\flow\FlowControl.php at line 733
+2018-03-15 19:27:09 ErrorLevel:8, E_NOTICE: Undefined index: File in E:\github\process\process\flow\FlowControl.php at line 521
+2018-03-15 19:44:46 ErrorLevel:8, E_NOTICE: Undefined index: File in E:\github\process\process\flow\FlowControl.php at line 521
+2018-03-15 19:44:58 ErrorLevel:8, E_NOTICE: Undefined index: File in E:\github\process\process\flow\FlowControl.php at line 521
+2018-03-15 19:46:35 ErrorLevel:8, E_NOTICE: Undefined index: File in E:\github\process\process\flow\FlowControl.php at line 521
