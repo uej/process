@@ -187,9 +187,7 @@ class FlowControl
         
         $medoo      = \process\Workflow::connectdb();
         $medoo->pdo->beginTransaction();
-        $medoo->insert('workflow', $flowData);
-        $flowid = $medoo->id();
-        if (!$flowid) {
+        if ($medoo->insert('workflow', $flowData)->errorCode() !== '00000') {
             $medoo->pdo->rollBack();
             return ['code' => -2, 'errormsg' => '创建流程表失败'];
         }
@@ -217,27 +215,11 @@ class FlowControl
         $medoo  = \process\Workflow::connectdb();
         
         /* 验证流程表单完整性 */
-        $field  = $medoo->select('*', ['WorkflowID' => $flowID]);
-        foreach ($field as $val) {
-            if ($val['Must'] == 1) {
-                if (
-                    empty(trim($data[$val['FieldName']])) &&
-                    $data[$val['FieldName']] !== 0 &&
-                    $data[$val['FieldName']] !== 0.0 &&
-                    $data[$val['FieldName']] !== '0'
-                ) {
-                    return ['code' => 0, 'errormsg' => "{$val['FieldTitle']}为必填"];
-                }
-            }
-            if (!empty(Form::$fields[$val['TypeID']]['pattern'])) {
-                if (!preg_match(Form::$fields[$val['TypeID']]['pattern'], $data[$val['FieldName']])) {
-                    return ['code' => 0, 'errormsg' => "{$val['FieldTitle']}格式不正确"];
-                }
-            }
-            if ($val['TypeID'] == 7 || $val['TypeID'] == 8) {
-                $data[$val['FieldName']]    = strtotime($data[$val['FieldName']]);
-            }
+        $checkdata  = self::checkData($flowID, $data);
+        if ($checkdata['code'] != 1) {
+            return $checkdata;
         }
+        $data   = $checkdata['data'];
         
         $medoo->pdo->beginTransaction();
         if ($medoo->insert("formtable$flowID", $data)->errorCode() !== '00000') {
@@ -738,6 +720,194 @@ class FlowControl
             $medoo->pdo->commit();
             return ['code' => 1, 'over' => 0, 'NowNode' => $nextNode];
         }
+    }
+    
+    /**
+     * 数据编辑
+     * 
+     * @param integer $programID 申请项id
+     * @param integer $userID 申请人id
+     * @param array $data 数据
+     * @return array 提交结果
+     */
+    public static function edit($programID, $userID, $data)
+    {
+        $medoo      = \process\Workflow::connectdb();
+        $program    = $medoo->get('program', '*', ['ID' => $programID]);
+        
+        if ($program['UserID'] != $userID) {
+            return [
+                'code'  => '0',
+                'errormsg'  => '非申请人不能修改'
+            ];
+        }
+        if ($program['IsEdit'] != 1) {
+            return [
+                'code'  => '0',
+                'errormsg'  => 'g该阶段不能修改'
+            ];
+        }
+        
+        /* 数据验证 */
+        $checkdata  = self::checkData($program['WorkflowID'], $data);
+        if ($checkdata['code'] != 1) {
+            return $checkdata;
+        }
+        $data   = $checkdata['data'];
+        
+        /* 更新数据 */
+        $medoo->pdo->beginTransaction();
+        if ($medoo->update("formtable{$program['WorkflowID']}", $data, ['ID' => $program['FormID']])->errorCode() !== '00000') {
+            $medoo->pdo->rollBack();
+            return ['code' => -2, 'errormsg' => '数据保存失败'];
+        }
+        
+        if ($medoo->update("program", ['IsEdit' => 0], ['ID' => $programID])->errorCode() !== '00000') {
+            $medoo->pdo->rollBack();
+            return ['code' => -2, 'errormsg' => '提交失败'];
+        }
+        
+        $medoo->pdo->commit();
+        return ['code' => 1, 'NowNode' => $program['NowNode']];
+    }
+    
+    /**
+     * 数据检查
+     * 
+     * @param integer $flowID 流程id
+     * @param array $data 数据数组
+     * @return array 检查结果
+     */
+    private static function checkData($flowID, $data)
+    {
+        $medoo  = \process\Workflow::connectdb();
+        $field  = $medoo->select('flowform', '*', ['WorkflowID' => $flowID]);
+        foreach ($field as $val) {
+            if ($val['Must'] == 1) {
+                if (
+                    empty(trim($data[$val['FieldName']])) &&
+                    $data[$val['FieldName']] !== 0 &&
+                    $data[$val['FieldName']] !== 0.0 &&
+                    $data[$val['FieldName']] !== '0'
+                ) {
+                    return ['code' => 0, 'errormsg' => "{$val['FieldTitle']}为必填"];
+                }
+            }
+            if (!empty(Form::$fields[$val['TypeID']]['pattern'])) {
+                if (!preg_match(Form::$fields[$val['TypeID']]['pattern'], $data[$val['FieldName']])) {
+                    return ['code' => 0, 'errormsg' => "{$val['FieldTitle']}格式不正确"];
+                }
+            }
+            if ($val['TypeID'] == 7 || $val['TypeID'] == 8) {
+                $data[$val['FieldName']]    = strtotime($data[$val['FieldName']]);
+            }
+        }
+        
+        return ['code' => 1, 'data' => $data];
+    }
+    
+    /**
+     * 撤回申请（仅当没有审核记录时能撤回）
+     * 
+     * @param integer $programID 申请项id
+     * @param integer $userID 申请人id
+     * @return array 处理结果
+     */
+    public static function revoke($programID, $userID)
+    {
+        $medoo  = \process\Workflow::connectdb();
+        
+        $program    = $medoo->get('program', ['IsEdit', 'UserID'], ['ID' => $programID]);
+        if ($program['UserID'] != $userID) {
+            return [
+                'code' => 0,
+                'errormsg' => '仅限申请人本人操作'
+            ];
+        }
+        if ($program['IsEdit'] == 1) {
+            return [
+                'code' => 0,
+                'errormsg' => '已经是可编辑状态，请勿重复操作'
+            ];
+        }
+        
+        $checklog   = $medoo->has('flowlog', ['ProgramID' => $programID]);
+        if ($checklog) {
+            return [
+                'code' => 0,
+                'errormsg' => '当前状态不能撤回'
+            ];
+        }
+        
+        if ($medoo->update('program', ['IsEdit' => 1], ['ID' => $programID])->errorCode() === '00000') {
+            return [
+                'code' => 1,
+            ];
+        } else {
+            return [
+                'code' => -2,
+                'errormsg' => '提交失败'
+            ];
+        }
+    }
+    
+    
+    public static function editFlow($flowID, $data)
+    {
+        $medoo  = \process\Workflow::connectdb();
+        
+        /* 检查能否修改 */
+        if ($medoo->has('program', ['WorkFlowID' => $flowID, 'Result' => 0])) {
+            return [
+                'code'      => 0,
+                'errormsg'  => '该流程还有申请未完成，暂时不能修改',
+            ];
+        }
+        
+        $flowData   = [
+            'Name'          => $data['Name'],
+            'CreateTime'    => time(),
+            'TypeID'        => intval($data['TypeID']),
+            'Introduce'     => $data['Introduce'],
+        ];
+        if (!empty($data['DepartmentID'])) {
+            $flowData['DepartmentID']   = intval($data['DepartmentID']);
+        }
+        if (!empty($data['RoleID'])) {
+            $flowData['RoleID'] = intval($data['RoleID']);
+        }
+        
+        /* 流程数据验证 */
+        $checkres   = self::checkFlow($data['FlowNodes']);
+        if ($checkres['code'] != 1) {
+            return ['code' => 0, 'errormsg' => $checkres['errormsg']];
+        }
+        
+        /* 编号规则验证 */
+        $checkres   = self::checkOrderRule($data['OrderRule']);
+        if ($checkres['code'] != 1) {
+            return ['code' => 0, 'errormsg' => $checkres['errormsg']];
+        }
+        
+        $flowData['FlowNodes']  = json_encode($data['FlowNodes']);
+        $flowData['OrderRule']  = json_encode($data['OrderRule']);
+        if (!empty($data['UserID']))
+            $flowData['UserID'] = ','.implode(',', $data['UserID']).',';
+        
+        $medoo->pdo->beginTransaction();
+        if ($medoo->update('workflow', $flowData, ['ID' => $flowID])->errorCode() !== '00000') {
+            $medoo->pdo->rollBack();
+            return ['code' => -2, 'errormsg' => '修改流程表失败'];
+        }
+        
+        /* 流程表单添加 */
+        $createRes  = Form::editDbTable($data['From'], $flowID);
+        if ($createRes['code'] != 1) {
+            return ['code' => -2, 'errormsg' => $createRes['errormsg']];
+        }
+        
+        $medoo->pdo->commit();
+        return ['code' => 1, 'errormsg' => ''];
     }
     
 }

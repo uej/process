@@ -51,6 +51,19 @@ class Workflow
     }
     
     /**
+     * 编辑申请
+     * 
+     * @param integer $programID 申请id
+     * @param integer $userID 申请人id
+     * @param array $data 申请表单数据
+     * @return array 编辑结果
+     */
+    public function editProgram($programID, $userID, $data)
+    {
+        return flow\FlowControl::edit($programID, $userID, $data);
+    }
+    
+    /**
      * 新建流程
      * 
      * @param array $data 流程数据
@@ -59,6 +72,24 @@ class Workflow
     public function createFlow($data)
     {
         return flow\FlowControl::createFlow($data);
+    }
+    
+    /**
+     * 撤回申请（仅当没有审核记录时能撤回）
+     * 
+     * @param integer $programID 申请项id
+     * @param integer $userID 申请人id
+     * @return array 处理结果
+     */
+    public function revoke($programID, $userID)
+    {
+        return flow\FlowControl::revoke($programID, $userID);
+    }
+    
+    
+    public function editFlow($flowID, $data)
+    {
+        
     }
     
     /**

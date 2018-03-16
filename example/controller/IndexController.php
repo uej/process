@@ -162,10 +162,10 @@ class IndexController extends Controller {
     public function doapply() {
         $workflow   = new \process\Workflow();
         $res        = $workflow->startNew(1, 2, [
-            'Content1'  => '阿斯顿加啊卡机双打刻录机打开asdada按时大大',
-            'TimeBetween1Start' => strtotime("2018-03-14 09:00"),
-            'TimeBetween1End'   => strtotime('2018-03-15 18:00'),
-            'TimeBetween1Total' => 2,
+//            'Content1'  => '阿斯顿加啊卡机双打刻录机打开asdada按时大大',
+//            'TimeBetween1Start' => "2018-03-14 09:00",
+//            'TimeBetween1End'   => '2018-03-15 18:00',
+//            'TimeBetween1Total' => 2,
         ]);
         
         dump($res);
