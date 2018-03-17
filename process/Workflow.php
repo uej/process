@@ -89,7 +89,7 @@ class Workflow
     
     public function editFlow($flowID, $data)
     {
-        
+        return flow\FlowControl::editFlow($flowID, $data);
     }
     
     /**

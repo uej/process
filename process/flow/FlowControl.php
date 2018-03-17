@@ -193,7 +193,7 @@ class FlowControl
         }
         
         /* 流程表单添加 */
-        $createRes  = Form::createDbTable($data['From'], $flowid, $flowData['Name']);
+        $createRes  = Form::createDbTable($data['Form'], $flowid, $flowData['Name']);
         if ($createRes['code'] != 1) {
             return ['code' => -3, 'errormsg' => $createRes['errormsg']];
         }
@@ -901,7 +901,7 @@ class FlowControl
         }
         
         /* 流程表单添加 */
-        $createRes  = Form::editDbTable($data['From'], $flowID);
+        $createRes  = Form::editDbTable($data['Form'], $flowID);
         if ($createRes['code'] != 1) {
             return ['code' => -2, 'errormsg' => $createRes['errormsg']];
         }
