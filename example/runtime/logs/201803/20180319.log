@@ -1,0 +1,22 @@
+2018-03-19 19:00:35 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-19 19:00:38 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-19 19:00:38 ErrorLevel:8, E_NOTICE: Undefined variable: html in E:\github\process\ez\core\Model.php at line 388
+2018-03-19 19:00:47 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-19 19:00:48 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-19 19:00:48 ErrorLevel:8, E_NOTICE: Undefined variable: html in E:\github\process\ez\core\Model.php at line 388
+2018-03-19 19:00:48 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-19 19:08:10 ErrorLevel:8, E_NOTICE: Undefined variable: city in E:\github\process\example\view\index\index.php at line 15
+2018-03-19 19:08:10 ErrorLevel:2, E_WARNING: Invalid argument supplied for foreach() in E:\github\process\example\view\index\index.php at line 15
+2018-03-19 19:08:10 ErrorLevel:8, E_NOTICE: Undefined variable: html in E:\github\process\example\view\index\index.php at line 69
+2018-03-19 19:13:57 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-19 19:13:59 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-19 19:14:24 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-19 19:14:25 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-19 19:15:10 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-19 19:15:12 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-19 19:15:12 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-19 19:15:12 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-19 19:15:55 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-19 19:16:01 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-19 19:16:02 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176
+2018-03-19 19:17:48 ErrorLevel:2, E_WARNING: The magic method __callStatic() must have public visibility and be static in E:\github\process\ez\core\Model.php at line 176

@@ -6,7 +6,7 @@ include(__DIR__ . '/../public/head.php');
             <div style="padding: 15px;">
                 <div class="layui-form-item">
                     <div class="layui-inline">
-                        <a href="javascript:open('<?=Route::createUrl('addflow')?>')" class="layui-btn">添加</a>
+                        <a href="<?=Route::createUrl('addflow')?>" class="layui-btn">添加</a>
                     </div>
                 </div>
                 

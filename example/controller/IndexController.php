@@ -11,18 +11,12 @@ use ez\core\Route;
 class IndexController extends Controller {
     
     
-    public function tx() {
-        $this->display();
-    }
-    
     /**
      * 我的申请
      * 
      * @access public
      */
     public function index() {
-        $a['撒打算'] = 'asda';
-        var_dump($a);
         $this->display();
     }
     
@@ -52,13 +46,17 @@ class IndexController extends Controller {
     
     
     /**
-     * 添加流程页
+     * 添加流程
      * 
      * @access public
      */
     public function addflow() {
-        $this->assign('flowtype', \example\model\Flowtype::select('*'));
-        $this->display();
+        if (empty($_POST)) {
+            $this->assign('flowtype', \example\model\Flowtype::select('*'));
+            $this->display();
+        } else {
+            
+        }
     }
     
     
