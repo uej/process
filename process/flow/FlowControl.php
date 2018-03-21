@@ -338,7 +338,7 @@ class FlowControl
                 }
             }
             if ($need == 1) {
-                return self::getNewNodeAndCheckUserAndOrdernum($flowNodes, $orderRule, $userID, $nowNode);
+                return self::getNewNodeAndCheckUserAndOrdernum($flowNodes, $orderRule, $userID, $nowNode, $flowID);
             } else {
                 return self::getNewCheck($flowID, $userID, $data, intval($nowNode)+1);
             }
@@ -354,7 +354,7 @@ class FlowControl
      * @param integer $nowNode 当前节点
      * @return array 应到节点、审批人、申请编号
      */
-    private static function getNewNodeAndCheckUserAndOrdernum($flowNodes, $orderRule, $userID, $nowNode)
+    private static function getNewNodeAndCheckUserAndOrdernum($flowNodes, $orderRule, $userID, $nowNode, $flowID)
     {
         $nowNode    = intval($nowNode);
         $medoo      = \process\Workflow::connectdb();
@@ -392,7 +392,7 @@ class FlowControl
                     $startTime  = strtotime(date('Y-m'). '-01');
                     $endTime    = strtotime(date('Y-m'). "-01 +1 month -1 second");
                 }
-                $total  = $medoo->count('program', ['CreateTime[>=]' => $startTime, 'EndTime[<=]' => $endTime]);
+                $total  = $medoo->count('program', ['CreateTime[>=]' => $startTime, 'CreateTime[<=]' => $endTime, 'WorkflowID' => $flowID]);
                 $total  = $total + 1;
                 $num    = sprintf("%0{$val['length']}d", $total);
                 $orderNum .= $num;
@@ -458,7 +458,7 @@ class FlowControl
         
         /* 审批前验证 */
         if (strpos($program['CheckUserID'], ",$userID,") === FALSE && call_user_func(function($medoo, $userID, $program) {
-            $checkDepartment = $checkRole = FALSE;
+            $checkDepartment = $checkRole = FALSE;      // 初始化为能审核
             $user   = $medoo->get('user', '*', ['ID' => $userID]);
             if (!empty($program['CheckDepartmentID'])) {
                 if (strpos($program['CheckDepartmentID'], ','.$user['DepartmentID'].',') === FALSE) {
@@ -471,7 +471,7 @@ class FlowControl
                 }
             }
             
-            if ($checkDepartment && $checkRole) {
+            if ($checkDepartment || $checkRole) {
                 return TRUE;
             } else {
                 return FALSE;
@@ -578,6 +578,7 @@ class FlowControl
                     $medoo->pdo->rollBack();
                     return ['code' => -2, 'errormsg' => '审批提交失败'];
                 } else {
+                    $medoo->pdo->commit();
                     return ['code' => 1, 'over' => 0, 'NowNode' => $program['NowNode']];
                 }
             } else {
@@ -596,6 +597,7 @@ class FlowControl
                     $medoo->pdo->rollBack();
                     return ['code' => -2, 'errormsg' => '审批提交失败'];
                 } else {
+                    $medoo->pdo->commit();
                     return ['code' => 1, 'over' => 0, 'NowNode' => $program['NowNode']];
                 }
             }
@@ -608,6 +610,7 @@ class FlowControl
                 $medoo->pdo->rollBack();
                 return ['code' => -2, 'errormsg' => '审批提交失败'];
             } else {
+                $medoo->pdo->commit();
                 return ['code' => 1];
             }
         }
@@ -712,36 +715,36 @@ class FlowControl
                 if ($val['type'] == 1) {
                     if ($programdata[$val['field']] > $val['value']) {
                         $need   = 1;
-                        if ($flowNodes[$nowNode]['needtype'] == 2) {
+                        if ($flowNodes[$nextNode]['needtype'] == 2) {
                             break;
                         }
                     } else {
                         $need   = 0;
-                        if ($flowNodes[$nowNode]['needtype'] == 1) {
+                        if ($flowNodes[$nextNode]['needtype'] == 1) {
                             break;
                         }
                     }
                 } else if ($val['type'] == 2) {
                     if ($programdata[$val['field']] == $val['value']) {
                         $need   = 1;
-                        if ($flowNodes[$nowNode]['needtype'] == 2) {
+                        if ($flowNodes[$nextNode]['needtype'] == 2) {
                             break;
                         }
                     } else {
                         $need   = 0;
-                        if ($flowNodes[$nowNode]['needtype'] == 1) {
+                        if ($flowNodes[$nextNode]['needtype'] == 1) {
                             break;
                         }
                     }
                 } else if ($val['type'] == 3) {
                     if ($programdata[$val['field']] < $val['value']) {
                         $need   = 1;
-                        if ($flowNodes[$nowNode]['needtype'] == 2) {
+                        if ($flowNodes[$nextNode]['needtype'] == 2) {
                             break;
                         }
                     } else {
                         $need   = 0;
-                        if ($flowNodes[$nowNode]['needtype'] == 1) {
+                        if ($flowNodes[$nextNode]['needtype'] == 1) {
                             break;
                         }
                     }
@@ -767,7 +770,6 @@ class FlowControl
                 explode(',', trim($program['CopyUserID'], ',')),
                 explode(',', $flowNodes[$nextNode]['copy'])
             )).',';
-            $updata['CopyUserID']   = ','.implode(',', $updata['CopyUserID']).',';
         }
         if ($medoo->update('program', $updata, ['ID' => $program['ID']])->errorCode() !== '00000') {
             $medoo->pdo->rollBack();
@@ -855,7 +857,7 @@ class FlowControl
                 }
             }
             if ($val['TypeID'] == 7 || $val['TypeID'] == 8) {
-                if (strtotime($data[$val['FieldName']]) > 0)        // 此处验证是否是时间格式
+                if (strtotime($data[$val['FieldName']]) > 0 && strpos($data[$val['FieldName']], '-'))        // 此处验证是否是时间格式
                     $data[$val['FieldName']]    = strtotime($data[$val['FieldName']]);
             }
         }

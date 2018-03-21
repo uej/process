@@ -1,0 +1,208 @@
+2018-03-21 14:10:35 ErrorLevel:8, E_NOTICE: Undefined index: checkUserID in E:\github\process\process\flow\FlowControl.php at line 258
+2018-03-21 14:10:35 ErrorLevel:8, E_NOTICE: Undefined index: copyUserID in E:\github\process\process\flow\FlowControl.php at line 259
+2018-03-21 14:40:52 ParseError: syntax error, unexpected ',', expecting ']' in E:\github\process\process\flow\FlowControl.php:859
+Stack trace:
+#0 [internal function]: ez\core\Ez::ez\core\{closure}('process\\flow\\Fl...')
+#1 E:\github\process\process\Workflow.php(50): spl_autoload_call('process\\flow\\Fl...')
+#2 E:\github\process\example\controller\IndexController.php(107): process\Workflow->startNew(1, 2, Array)
+#3 E:\github\process\ez\core\Application.php(39): example\controller\IndexController->doapply()
+#4 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#5 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#6 {main}
+
+Next ParseError: syntax error, unexpected ',', expecting ']' in E:\github\process\process\flow\FlowControl.php:859
+Stack trace:
+#0 [internal function]: ezAutoload('process\\flow\\Fl...')
+#1 E:\github\process\process\Workflow.php(50): spl_autoload_call('process\\flow\\Fl...')
+#2 E:\github\process\example\controller\IndexController.php(107): process\Workflow->startNew(1, 2, Array)
+#3 E:\github\process\ez\core\Application.php(39): example\controller\IndexController->doapply()
+#4 E:\github\process\ez\core\Ez.php(90): ez\core\Application->run()
+#5 E:\github\process\example\web\index.php(22): ez\core\Ez::start()
+#6 {main}
+2018-03-21 14:42:13 ErrorLevel:8, E_NOTICE: Undefined index: checkUserID in E:\github\process\process\flow\FlowControl.php at line 258
+2018-03-21 14:42:13 ErrorLevel:8, E_NOTICE: Undefined index: copyUserID in E:\github\process\process\flow\FlowControl.php at line 259
+2018-03-21 14:51:52 ErrorLevel:8, E_NOTICE: Undefined index: checkUserID in E:\github\process\process\flow\FlowControl.php at line 258
+2018-03-21 14:51:52 ErrorLevel:8, E_NOTICE: Undefined index: copyUserID in E:\github\process\process\flow\FlowControl.php at line 259
+2018-03-21 15:01:10 ErrorLevel:8, E_NOTICE: Undefined index: File in E:\github\process\process\flow\FlowControl.php at line 505
+2018-03-21 15:01:10 ErrorLevel:8, E_NOTICE: Undefined variable: nowNode in E:\github\process\process\flow\FlowControl.php at line 715
+2018-03-21 15:01:10 ErrorLevel:8, E_NOTICE: Undefined index:  in E:\github\process\process\flow\FlowControl.php at line 715
+2018-03-21 15:01:10 ErrorLevel:8, E_NOTICE: Undefined index: self in E:\github\process\process\flow\FlowControl.php at line 654
+2018-03-21 15:01:10 ErrorLevel:8, E_NOTICE: Undefined index: checkUserID in E:\github\process\process\flow\FlowControl.php at line 760
+2018-03-21 15:01:10 ErrorLevel:8, E_NOTICE: Undefined index: checkDepartmentID in E:\github\process\process\flow\FlowControl.php at line 762
+2018-03-21 15:01:10 ErrorLevel:2, E_WARNING: implode(): Invalid arguments passed in E:\github\process\process\flow\FlowControl.php at line 770
+2018-03-21 15:01:18 ErrorLevel:8, E_NOTICE: Undefined index: File in E:\github\process\process\flow\FlowControl.php at line 505
+2018-03-21 15:05:15 ErrorLevel:8, E_NOTICE: Undefined index: File in E:\github\process\process\flow\FlowControl.php at line 505
+2018-03-21 15:05:15 ErrorLevel:8, E_NOTICE: Undefined variable: nowNode in E:\github\process\process\flow\FlowControl.php at line 715
+2018-03-21 15:05:15 ErrorLevel:8, E_NOTICE: Undefined index:  in E:\github\process\process\flow\FlowControl.php at line 715
+2018-03-21 15:05:15 ErrorLevel:8, E_NOTICE: Undefined index: self in E:\github\process\process\flow\FlowControl.php at line 654
+2018-03-21 15:05:15 ErrorLevel:8, E_NOTICE: Undefined index: checkUserID in E:\github\process\process\flow\FlowControl.php at line 760
+2018-03-21 15:05:15 ErrorLevel:8, E_NOTICE: Undefined index: checkDepartmentID in E:\github\process\process\flow\FlowControl.php at line 762
+2018-03-21 15:05:15 ErrorLevel:2, E_WARNING: implode(): Invalid arguments passed in E:\github\process\process\flow\FlowControl.php at line 770
+2018-03-21 15:32:17 ErrorLevel:8, E_NOTICE: Undefined index: File in E:\github\process\process\flow\FlowControl.php at line 505
+2018-03-21 15:32:17 ErrorLevel:8, E_NOTICE: Undefined index: self in E:\github\process\process\flow\FlowControl.php at line 654
+2018-03-21 15:32:17 ErrorLevel:8, E_NOTICE: Undefined index: checkUserID in E:\github\process\process\flow\FlowControl.php at line 590
+2018-03-21 15:32:17 ErrorLevel:8, E_NOTICE: Undefined index: checkDepartmentID in E:\github\process\process\flow\FlowControl.php at line 593
+2018-03-21 15:33:18 ErrorLevel:8, E_NOTICE: Undefined index: File in E:\github\process\process\flow\FlowControl.php at line 505
+2018-03-21 15:33:18 ErrorLevel:8, E_NOTICE: Undefined index: self in E:\github\process\process\flow\FlowControl.php at line 654
+2018-03-21 15:33:18 ErrorLevel:8, E_NOTICE: Undefined index: checkUserID in E:\github\process\process\flow\FlowControl.php at line 590
+2018-03-21 15:33:18 ErrorLevel:8, E_NOTICE: Undefined index: checkDepartmentID in E:\github\process\process\flow\FlowControl.php at line 593
+2018-03-21 15:33:18 ErrorLevel:8, E_NOTICE: Undefined index: File in E:\github\process\process\flow\FlowControl.php at line 505
+2018-03-21 15:33:18 ErrorLevel:8, E_NOTICE: Undefined index: self in E:\github\process\process\flow\FlowControl.php at line 654
+2018-03-21 15:33:18 ErrorLevel:8, E_NOTICE: Undefined index: checkUserID in E:\github\process\process\flow\FlowControl.php at line 590
+2018-03-21 15:33:18 ErrorLevel:8, E_NOTICE: Undefined index: checkDepartmentID in E:\github\process\process\flow\FlowControl.php at line 593
+2018-03-21 15:33:18 ErrorLevel:8, E_NOTICE: Undefined index: File in E:\github\process\process\flow\FlowControl.php at line 505
+2018-03-21 15:33:18 ErrorLevel:8, E_NOTICE: Undefined index: self in E:\github\process\process\flow\FlowControl.php at line 654
+2018-03-21 15:33:18 ErrorLevel:8, E_NOTICE: Undefined index: checkUserID in E:\github\process\process\flow\FlowControl.php at line 590
+2018-03-21 15:33:18 ErrorLevel:8, E_NOTICE: Undefined index: checkDepartmentID in E:\github\process\process\flow\FlowControl.php at line 593
+2018-03-21 15:33:19 ErrorLevel:8, E_NOTICE: Undefined index: File in E:\github\process\process\flow\FlowControl.php at line 505
+2018-03-21 15:33:19 ErrorLevel:8, E_NOTICE: Undefined index: self in E:\github\process\process\flow\FlowControl.php at line 654
+2018-03-21 15:33:19 ErrorLevel:8, E_NOTICE: Undefined index: checkUserID in E:\github\process\process\flow\FlowControl.php at line 590
+2018-03-21 15:33:19 ErrorLevel:8, E_NOTICE: Undefined index: checkDepartmentID in E:\github\process\process\flow\FlowControl.php at line 593
+2018-03-21 15:33:19 ErrorLevel:8, E_NOTICE: Undefined index: File in E:\github\process\process\flow\FlowControl.php at line 505
+2018-03-21 15:33:19 ErrorLevel:8, E_NOTICE: Undefined index: self in E:\github\process\process\flow\FlowControl.php at line 654
+2018-03-21 15:33:19 ErrorLevel:8, E_NOTICE: Undefined index: checkUserID in E:\github\process\process\flow\FlowControl.php at line 590
+2018-03-21 15:33:19 ErrorLevel:8, E_NOTICE: Undefined index: checkDepartmentID in E:\github\process\process\flow\FlowControl.php at line 593
+2018-03-21 15:33:19 ErrorLevel:8, E_NOTICE: Undefined index: File in E:\github\process\process\flow\FlowControl.php at line 505
+2018-03-21 15:33:19 ErrorLevel:8, E_NOTICE: Undefined index: self in E:\github\process\process\flow\FlowControl.php at line 654
+2018-03-21 15:33:19 ErrorLevel:8, E_NOTICE: Undefined index: checkUserID in E:\github\process\process\flow\FlowControl.php at line 590
+2018-03-21 15:33:19 ErrorLevel:8, E_NOTICE: Undefined index: checkDepartmentID in E:\github\process\process\flow\FlowControl.php at line 593
+2018-03-21 15:33:19 ErrorLevel:8, E_NOTICE: Undefined index: File in E:\github\process\process\flow\FlowControl.php at line 505
+2018-03-21 15:33:19 ErrorLevel:8, E_NOTICE: Undefined index: self in E:\github\process\process\flow\FlowControl.php at line 654
+2018-03-21 15:33:19 ErrorLevel:8, E_NOTICE: Undefined index: checkUserID in E:\github\process\process\flow\FlowControl.php at line 590
+2018-03-21 15:33:19 ErrorLevel:8, E_NOTICE: Undefined index: checkDepartmentID in E:\github\process\process\flow\FlowControl.php at line 593
+2018-03-21 15:33:19 ErrorLevel:8, E_NOTICE: Undefined index: File in E:\github\process\process\flow\FlowControl.php at line 505
+2018-03-21 15:33:19 ErrorLevel:8, E_NOTICE: Undefined index: self in E:\github\process\process\flow\FlowControl.php at line 654
+2018-03-21 15:33:19 ErrorLevel:8, E_NOTICE: Undefined index: checkUserID in E:\github\process\process\flow\FlowControl.php at line 590
+2018-03-21 15:33:19 ErrorLevel:8, E_NOTICE: Undefined index: checkDepartmentID in E:\github\process\process\flow\FlowControl.php at line 593
+2018-03-21 15:33:19 ErrorLevel:8, E_NOTICE: Undefined index: File in E:\github\process\process\flow\FlowControl.php at line 505
+2018-03-21 15:33:19 ErrorLevel:8, E_NOTICE: Undefined index: self in E:\github\process\process\flow\FlowControl.php at line 654
+2018-03-21 15:33:19 ErrorLevel:8, E_NOTICE: Undefined index: checkUserID in E:\github\process\process\flow\FlowControl.php at line 590
+2018-03-21 15:33:19 ErrorLevel:8, E_NOTICE: Undefined index: checkDepartmentID in E:\github\process\process\flow\FlowControl.php at line 593
+2018-03-21 15:38:14 ErrorLevel:8, E_NOTICE: Undefined index: File in E:\github\process\process\flow\FlowControl.php at line 505
+2018-03-21 15:38:14 ErrorLevel:8, E_NOTICE: Undefined index: self in E:\github\process\process\flow\FlowControl.php at line 657
+2018-03-21 15:38:14 ErrorLevel:8, E_NOTICE: Undefined index: checkUserID in E:\github\process\process\flow\FlowControl.php at line 591
+2018-03-21 15:38:14 ErrorLevel:8, E_NOTICE: Undefined index: checkDepartmentID in E:\github\process\process\flow\FlowControl.php at line 594
+2018-03-21 15:40:14 ErrorLevel:8, E_NOTICE: Undefined index: File in E:\github\process\process\flow\FlowControl.php at line 505
+2018-03-21 16:04:49 ErrorLevel:8, E_NOTICE: Undefined index: checkUserID in E:\github\process\process\flow\FlowControl.php at line 258
+2018-03-21 16:04:49 ErrorLevel:8, E_NOTICE: Undefined index: copyUserID in E:\github\process\process\flow\FlowControl.php at line 259
+2018-03-21 16:08:17 ErrorLevel:8, E_NOTICE: Undefined index: File in E:\github\process\process\flow\FlowControl.php at line 505
+2018-03-21 16:08:17 ErrorLevel:8, E_NOTICE: Undefined variable: nowNode in E:\github\process\process\flow\FlowControl.php at line 718
+2018-03-21 16:08:17 ErrorLevel:8, E_NOTICE: Undefined index:  in E:\github\process\process\flow\FlowControl.php at line 718
+2018-03-21 16:08:17 ErrorLevel:8, E_NOTICE: Undefined index: self in E:\github\process\process\flow\FlowControl.php at line 657
+2018-03-21 16:08:17 ErrorLevel:8, E_NOTICE: Undefined index: checkUserID in E:\github\process\process\flow\FlowControl.php at line 763
+2018-03-21 16:08:17 ErrorLevel:8, E_NOTICE: Undefined index: checkDepartmentID in E:\github\process\process\flow\FlowControl.php at line 765
+2018-03-21 16:08:17 ErrorLevel:2, E_WARNING: implode(): Invalid arguments passed in E:\github\process\process\flow\FlowControl.php at line 773
+2018-03-21 16:13:52 ErrorLevel:8, E_NOTICE: Undefined index: File in E:\github\process\process\flow\FlowControl.php at line 505
+2018-03-21 16:15:37 ErrorLevel:8, E_NOTICE: Undefined index: File in E:\github\process\process\flow\FlowControl.php at line 505
+2018-03-21 16:16:16 ErrorLevel:8, E_NOTICE: Undefined index: File in E:\github\process\process\flow\FlowControl.php at line 505
+2018-03-21 16:16:16 ErrorLevel:8, E_NOTICE: Undefined variable: nowNode in E:\github\process\process\flow\FlowControl.php at line 718
+2018-03-21 16:16:16 ErrorLevel:8, E_NOTICE: Undefined index:  in E:\github\process\process\flow\FlowControl.php at line 718
+2018-03-21 16:16:16 ErrorLevel:8, E_NOTICE: Undefined index: self in E:\github\process\process\flow\FlowControl.php at line 657
+2018-03-21 16:16:16 ErrorLevel:8, E_NOTICE: Undefined index: checkUserID in E:\github\process\process\flow\FlowControl.php at line 763
+2018-03-21 16:16:16 ErrorLevel:8, E_NOTICE: Undefined index: checkDepartmentID in E:\github\process\process\flow\FlowControl.php at line 765
+2018-03-21 16:20:55 ErrorLevel:8, E_NOTICE: Undefined index: File in E:\github\process\process\flow\FlowControl.php at line 505
+2018-03-21 16:20:55 ErrorLevel:8, E_NOTICE: Undefined variable: nowNode in E:\github\process\process\flow\FlowControl.php at line 718
+2018-03-21 16:20:55 ErrorLevel:8, E_NOTICE: Undefined index:  in E:\github\process\process\flow\FlowControl.php at line 718
+2018-03-21 16:20:55 ErrorLevel:8, E_NOTICE: Undefined index: self in E:\github\process\process\flow\FlowControl.php at line 657
+2018-03-21 16:20:55 ErrorLevel:8, E_NOTICE: Undefined index: checkUserID in E:\github\process\process\flow\FlowControl.php at line 763
+2018-03-21 16:20:55 ErrorLevel:8, E_NOTICE: Undefined index: checkDepartmentID in E:\github\process\process\flow\FlowControl.php at line 765
+2018-03-21 16:22:25 ErrorLevel:8, E_NOTICE: Undefined index: File in E:\github\process\process\flow\FlowControl.php at line 505
+2018-03-21 16:22:25 ErrorLevel:8, E_NOTICE: Undefined variable: nowNode in E:\github\process\process\flow\FlowControl.php at line 718
+2018-03-21 16:22:25 ErrorLevel:8, E_NOTICE: Undefined index:  in E:\github\process\process\flow\FlowControl.php at line 718
+2018-03-21 16:22:25 ErrorLevel:8, E_NOTICE: Undefined index: self in E:\github\process\process\flow\FlowControl.php at line 657
+2018-03-21 16:22:25 ErrorLevel:8, E_NOTICE: Undefined index: checkUserID in E:\github\process\process\flow\FlowControl.php at line 763
+2018-03-21 16:22:25 ErrorLevel:8, E_NOTICE: Undefined index: checkDepartmentID in E:\github\process\process\flow\FlowControl.php at line 765
+2018-03-21 16:22:55 ErrorLevel:8, E_NOTICE: Undefined index: File in E:\github\process\process\flow\FlowControl.php at line 505
+2018-03-21 16:22:55 ErrorLevel:8, E_NOTICE: Undefined variable: nowNode in E:\github\process\process\flow\FlowControl.php at line 718
+2018-03-21 16:22:55 ErrorLevel:8, E_NOTICE: Undefined index:  in E:\github\process\process\flow\FlowControl.php at line 718
+2018-03-21 16:22:55 ErrorLevel:8, E_NOTICE: Undefined index: self in E:\github\process\process\flow\FlowControl.php at line 657
+2018-03-21 16:22:55 ErrorLevel:8, E_NOTICE: Undefined index: checkUserID in E:\github\process\process\flow\FlowControl.php at line 763
+2018-03-21 16:22:55 ErrorLevel:8, E_NOTICE: Undefined index: checkDepartmentID in E:\github\process\process\flow\FlowControl.php at line 765
+2018-03-21 16:23:40 ErrorLevel:8, E_NOTICE: Undefined index: File in E:\github\process\process\flow\FlowControl.php at line 505
+2018-03-21 16:23:40 ErrorLevel:8, E_NOTICE: Undefined variable: nowNode in E:\github\process\process\flow\FlowControl.php at line 718
+2018-03-21 16:23:40 ErrorLevel:8, E_NOTICE: Undefined index:  in E:\github\process\process\flow\FlowControl.php at line 718
+2018-03-21 16:23:40 ErrorLevel:8, E_NOTICE: Undefined index: self in E:\github\process\process\flow\FlowControl.php at line 657
+2018-03-21 16:23:40 ErrorLevel:8, E_NOTICE: Undefined index: checkUserID in E:\github\process\process\flow\FlowControl.php at line 763
+2018-03-21 16:23:40 ErrorLevel:8, E_NOTICE: Undefined index: checkDepartmentID in E:\github\process\process\flow\FlowControl.php at line 765
+2018-03-21 16:24:09 ErrorLevel:8, E_NOTICE: Undefined index: File in E:\github\process\process\flow\FlowControl.php at line 505
+2018-03-21 16:24:09 ErrorLevel:8, E_NOTICE: Undefined variable: nowNode in E:\github\process\process\flow\FlowControl.php at line 718
+2018-03-21 16:24:09 ErrorLevel:8, E_NOTICE: Undefined index:  in E:\github\process\process\flow\FlowControl.php at line 718
+2018-03-21 16:24:09 ErrorLevel:8, E_NOTICE: Undefined index: self in E:\github\process\process\flow\FlowControl.php at line 657
+2018-03-21 16:24:09 ErrorLevel:8, E_NOTICE: Undefined index: checkUserID in E:\github\process\process\flow\FlowControl.php at line 763
+2018-03-21 16:24:09 ErrorLevel:8, E_NOTICE: Undefined index: checkDepartmentID in E:\github\process\process\flow\FlowControl.php at line 765
+2018-03-21 16:24:57 ErrorLevel:8, E_NOTICE: Undefined index: File in E:\github\process\process\flow\FlowControl.php at line 505
+2018-03-21 16:24:57 ErrorLevel:8, E_NOTICE: Undefined variable: nowNode in E:\github\process\process\flow\FlowControl.php at line 718
+2018-03-21 16:24:57 ErrorLevel:8, E_NOTICE: Undefined index:  in E:\github\process\process\flow\FlowControl.php at line 718
+2018-03-21 16:24:57 ErrorLevel:8, E_NOTICE: Undefined index: self in E:\github\process\process\flow\FlowControl.php at line 657
+2018-03-21 16:24:57 ErrorLevel:8, E_NOTICE: Undefined index: checkUserID in E:\github\process\process\flow\FlowControl.php at line 763
+2018-03-21 16:24:57 ErrorLevel:8, E_NOTICE: Undefined index: checkDepartmentID in E:\github\process\process\flow\FlowControl.php at line 765
+2018-03-21 16:25:25 ErrorLevel:8, E_NOTICE: Undefined index: File in E:\github\process\process\flow\FlowControl.php at line 505
+2018-03-21 17:32:34 ErrorLevel:8, E_NOTICE: Undefined index: Title1 in E:\github\process\process\flow\FlowControl.php at line 846
+2018-03-21 17:32:34 ErrorLevel:8, E_NOTICE: Undefined index: Title1 in E:\github\process\process\flow\FlowControl.php at line 847
+2018-03-21 17:32:34 ErrorLevel:8, E_NOTICE: Undefined index: Title1 in E:\github\process\process\flow\FlowControl.php at line 848
+2018-03-21 17:32:34 ErrorLevel:8, E_NOTICE: Undefined index: Title1 in E:\github\process\process\flow\FlowControl.php at line 849
+2018-03-21 17:33:16 ErrorLevel:8, E_NOTICE: Undefined index: copyUserID in E:\github\process\process\flow\FlowControl.php at line 259
+2018-03-21 17:33:16 ErrorLevel:8, E_NOTICE: Undefined index: checkDepartmentID in E:\github\process\process\flow\FlowControl.php at line 260
+2018-03-21 17:33:16 ErrorLevel:8, E_NOTICE: Undefined index: checkRoleID in E:\github\process\process\flow\FlowControl.php at line 261
+2018-03-21 17:37:45 ErrorLevel:2, E_WARNING: Missing argument 5 for process\flow\FlowControl::getNewNodeAndCheckUserAndOrdernum(), called in E:\github\process\process\flow\FlowControl.php on line 297 and defined in E:\github\process\process\flow\FlowControl.php at line 357
+2018-03-21 17:37:45 ErrorLevel:8, E_NOTICE: Undefined variable: flowID in E:\github\process\process\flow\FlowControl.php at line 395
+2018-03-21 17:37:45 ErrorLevel:8, E_NOTICE: Undefined index: copyUserID in E:\github\process\process\flow\FlowControl.php at line 259
+2018-03-21 17:37:45 ErrorLevel:8, E_NOTICE: Undefined index: checkDepartmentID in E:\github\process\process\flow\FlowControl.php at line 260
+2018-03-21 17:37:45 ErrorLevel:8, E_NOTICE: Undefined index: checkRoleID in E:\github\process\process\flow\FlowControl.php at line 261
+2018-03-21 17:44:11 ErrorLevel:8, E_NOTICE: Undefined index: File in E:\github\process\process\flow\FlowControl.php at line 505
+2018-03-21 17:44:11 ErrorLevel:8, E_NOTICE: Undefined variable: nowNode in E:\github\process\process\flow\FlowControl.php at line 718
+2018-03-21 17:44:11 ErrorLevel:8, E_NOTICE: Undefined index:  in E:\github\process\process\flow\FlowControl.php at line 718
+2018-03-21 17:44:11 ErrorLevel:8, E_NOTICE: Undefined variable: nowNode in E:\github\process\process\flow\FlowControl.php at line 735
+2018-03-21 17:44:11 ErrorLevel:8, E_NOTICE: Undefined index:  in E:\github\process\process\flow\FlowControl.php at line 735
+2018-03-21 17:44:11 ErrorLevel:8, E_NOTICE: Undefined offset: 2 in E:\github\process\process\flow\FlowControl.php at line 709
+2018-03-21 17:55:46 ErrorLevel:2, E_WARNING: Missing argument 5 for process\flow\FlowControl::getNewNodeAndCheckUserAndOrdernum(), called in E:\github\process\process\flow\FlowControl.php on line 297 and defined in E:\github\process\process\flow\FlowControl.php at line 357
+2018-03-21 17:55:46 ErrorLevel:8, E_NOTICE: Undefined variable: flowID in E:\github\process\process\flow\FlowControl.php at line 395
+2018-03-21 17:55:46 ErrorLevel:8, E_NOTICE: Undefined index: copyUserID in E:\github\process\process\flow\FlowControl.php at line 259
+2018-03-21 17:55:46 ErrorLevel:8, E_NOTICE: Undefined index: checkDepartmentID in E:\github\process\process\flow\FlowControl.php at line 260
+2018-03-21 17:55:46 ErrorLevel:8, E_NOTICE: Undefined index: checkRoleID in E:\github\process\process\flow\FlowControl.php at line 261
+2018-03-21 17:56:09 ErrorLevel:8, E_NOTICE: Undefined index: File in E:\github\process\process\flow\FlowControl.php at line 505
+2018-03-21 18:25:21 ErrorLevel:8, E_NOTICE: Undefined index: File in E:\github\process\process\flow\FlowControl.php at line 505
+2018-03-21 18:25:21 ErrorLevel:8, E_NOTICE: Undefined variable: nowNode in E:\github\process\process\flow\FlowControl.php at line 718
+2018-03-21 18:25:21 ErrorLevel:8, E_NOTICE: Undefined index:  in E:\github\process\process\flow\FlowControl.php at line 718
+2018-03-21 18:25:21 ErrorLevel:8, E_NOTICE: Undefined variable: nowNode in E:\github\process\process\flow\FlowControl.php at line 735
+2018-03-21 18:25:21 ErrorLevel:8, E_NOTICE: Undefined index:  in E:\github\process\process\flow\FlowControl.php at line 735
+2018-03-21 18:25:51 ErrorLevel:8, E_NOTICE: Undefined index: File in E:\github\process\process\flow\FlowControl.php at line 505
+2018-03-21 18:25:51 ErrorLevel:8, E_NOTICE: Undefined variable: nowNode in E:\github\process\process\flow\FlowControl.php at line 719
+2018-03-21 18:25:51 ErrorLevel:8, E_NOTICE: Undefined index:  in E:\github\process\process\flow\FlowControl.php at line 719
+2018-03-21 18:25:51 ErrorLevel:8, E_NOTICE: Undefined variable: nowNode in E:\github\process\process\flow\FlowControl.php at line 736
+2018-03-21 18:25:51 ErrorLevel:8, E_NOTICE: Undefined index:  in E:\github\process\process\flow\FlowControl.php at line 736
+2018-03-21 18:27:14 ErrorLevel:8, E_NOTICE: Undefined index: File in E:\github\process\process\flow\FlowControl.php at line 505
+2018-03-21 18:27:14 ErrorLevel:8, E_NOTICE: Undefined variable: nowNode in E:\github\process\process\flow\FlowControl.php at line 719
+2018-03-21 18:27:14 ErrorLevel:8, E_NOTICE: Undefined index:  in E:\github\process\process\flow\FlowControl.php at line 719
+2018-03-21 18:27:14 ErrorLevel:8, E_NOTICE: Undefined variable: nowNode in E:\github\process\process\flow\FlowControl.php at line 736
+2018-03-21 18:27:14 ErrorLevel:8, E_NOTICE: Undefined index:  in E:\github\process\process\flow\FlowControl.php at line 736
+2018-03-21 18:28:50 ErrorLevel:8, E_NOTICE: Undefined index: File in E:\github\process\process\flow\FlowControl.php at line 505
+2018-03-21 18:28:50 ErrorLevel:8, E_NOTICE: Undefined variable: nowNode in E:\github\process\process\flow\FlowControl.php at line 720
+2018-03-21 18:28:50 ErrorLevel:8, E_NOTICE: Undefined index:  in E:\github\process\process\flow\FlowControl.php at line 720
+2018-03-21 18:28:50 ErrorLevel:8, E_NOTICE: Undefined variable: nowNode in E:\github\process\process\flow\FlowControl.php at line 737
+2018-03-21 18:28:50 ErrorLevel:8, E_NOTICE: Undefined index:  in E:\github\process\process\flow\FlowControl.php at line 737
+2018-03-21 18:29:11 ErrorLevel:8, E_NOTICE: Undefined index: File in E:\github\process\process\flow\FlowControl.php at line 505
+2018-03-21 18:29:11 ErrorLevel:8, E_NOTICE: Undefined variable: nowNode in E:\github\process\process\flow\FlowControl.php at line 720
+2018-03-21 18:29:11 ErrorLevel:8, E_NOTICE: Undefined index:  in E:\github\process\process\flow\FlowControl.php at line 720
+2018-03-21 18:29:11 ErrorLevel:8, E_NOTICE: Undefined variable: nowNode in E:\github\process\process\flow\FlowControl.php at line 737
+2018-03-21 18:29:11 ErrorLevel:8, E_NOTICE: Undefined index:  in E:\github\process\process\flow\FlowControl.php at line 737
+2018-03-21 18:29:37 ErrorLevel:8, E_NOTICE: Undefined index: File in E:\github\process\process\flow\FlowControl.php at line 505
+2018-03-21 18:29:37 ErrorLevel:8, E_NOTICE: Undefined variable: nowNode in E:\github\process\process\flow\FlowControl.php at line 719
+2018-03-21 18:29:37 ErrorLevel:8, E_NOTICE: Undefined index:  in E:\github\process\process\flow\FlowControl.php at line 719
+2018-03-21 18:29:37 ErrorLevel:8, E_NOTICE: Undefined variable: nowNode in E:\github\process\process\flow\FlowControl.php at line 720
+2018-03-21 18:29:37 ErrorLevel:8, E_NOTICE: Undefined index:  in E:\github\process\process\flow\FlowControl.php at line 720
+2018-03-21 18:29:37 ErrorLevel:8, E_NOTICE: Undefined variable: nowNode in E:\github\process\process\flow\FlowControl.php at line 737
+2018-03-21 18:29:37 ErrorLevel:8, E_NOTICE: Undefined index:  in E:\github\process\process\flow\FlowControl.php at line 737
+2018-03-21 18:29:46 ErrorLevel:8, E_NOTICE: Undefined index: File in E:\github\process\process\flow\FlowControl.php at line 505
+2018-03-21 18:29:46 ErrorLevel:8, E_NOTICE: Undefined variable: nowNode in E:\github\process\process\flow\FlowControl.php at line 719
+2018-03-21 18:29:46 ErrorLevel:8, E_NOTICE: Undefined index:  in E:\github\process\process\flow\FlowControl.php at line 719
+2018-03-21 18:29:46 ErrorLevel:8, E_NOTICE: Undefined variable: nowNode in E:\github\process\process\flow\FlowControl.php at line 720
+2018-03-21 18:29:46 ErrorLevel:8, E_NOTICE: Undefined index:  in E:\github\process\process\flow\FlowControl.php at line 720
+2018-03-21 18:29:46 ErrorLevel:8, E_NOTICE: Undefined variable: nowNode in E:\github\process\process\flow\FlowControl.php at line 737
+2018-03-21 18:29:46 ErrorLevel:8, E_NOTICE: Undefined index:  in E:\github\process\process\flow\FlowControl.php at line 737
+2018-03-21 18:33:20 ErrorLevel:8, E_NOTICE: Undefined index: File in E:\github\process\process\flow\FlowControl.php at line 505
+2018-03-21 18:33:49 ErrorLevel:8, E_NOTICE: Undefined index: File in E:\github\process\process\flow\FlowControl.php at line 505
+2018-03-21 18:33:49 ErrorLevel:8, E_NOTICE: Undefined index: self in E:\github\process\process\flow\FlowControl.php at line 657
+2018-03-21 18:33:49 ErrorLevel:8, E_NOTICE: Undefined index: checkUserID in E:\github\process\process\flow\FlowControl.php at line 763
+2018-03-21 18:33:49 ErrorLevel:8, E_NOTICE: Undefined index: checkDepartmentID in E:\github\process\process\flow\FlowControl.php at line 765
+2018-03-21 18:34:34 ErrorLevel:8, E_NOTICE: Undefined index: File in E:\github\process\process\flow\FlowControl.php at line 505

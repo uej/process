@@ -95,14 +95,18 @@ class IndexController extends Controller {
      */
     public function doapply() {
         $workflow   = new \process\Workflow();
-//        $userID     = 2;
-//        $flowID     = 1;
-//        $data       = [
-//            'Content1'  => '阿斯顿加啊卡机双打刻录机打开asdada按时大大',
-//            'TimeBetween1Start' => "2018-03-14 09",
-//            'TimeBetween1End'   => '2018-03-15 18',
-//            'TimeBetween1Total' => 2,
-//        ];
+        $userID     = 2;
+        $flowID     = 2;
+        $data       = [
+            'Title1'  => 'sadaasda阿斯达',
+            'Decimal1' => '151151',
+            'Time1'   => '2018-03-17 18:00',
+            'Time2' => '2019-03-17 18:00',
+            'Num1'  => 12,
+            'Title2'    => '摩萨德公司',
+            'Content1'  => '阿娇是宽大空间卡机双打卡机双打',
+            'FileName1' => '/data/sdad.sdf',
+        ];
         
         $res        = $workflow->startNew($flowID, $userID, $data);
         
@@ -111,8 +115,8 @@ class IndexController extends Controller {
     
     public function doflow() {
         $workflow   = new \process\Workflow();
-        $programID  = 1;
-        $userID     = 3;
+        $programID  = 8;
+        $userID     = 5;
         $data       = [
             'Content'   => '通过',
             'Pass'      => 1,
@@ -120,6 +124,22 @@ class IndexController extends Controller {
         
         $res        = $workflow->doFlow($programID, $userID, $data);
         
+        dump($res);
+    }
+    
+    public function editprogram() {
+        $workflow   = new \process\Workflow();
+        
+        $programID  = 5;
+        $userID     = 2;
+        $data       = [
+            'Content1'  => '阿斯顿加啊卡机双打刻录机打开asdada按时大大',
+            'TimeBetween1Start' => '2018-03-14 09:00',
+            'TimeBetween1End'   => '2018-03-17 17:00',
+            'TimeBetween1Total' => 4,
+        ];
+        
+        $res    = $workflow->editProgram($programID, $userID, $data);
         dump($res);
     }
     
