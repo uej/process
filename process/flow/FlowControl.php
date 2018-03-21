@@ -191,10 +191,12 @@ class FlowControl
             $medoo->pdo->rollBack();
             return ['code' => -2, 'errormsg' => '创建流程表失败'];
         }
+        $flowid = $medoo->id();
         
         /* 流程表单添加 */
         $createRes  = Form::createDbTable($data['Form'], $flowid, $flowData['Name']);
         if ($createRes['code'] != 1) {
+            $medoo->pdo->rollBack();
             return ['code' => -3, 'errormsg' => $createRes['errormsg']];
         }
         
@@ -293,43 +295,43 @@ class FlowControl
 
         if ($flowNodes[$nowNode]['need'] == 1) {
             return self::getNewNodeAndCheckUserAndOrdernum($flowNodes, $orderRule, $userID, $nowNode);
-        } else if (is_array($flowNodes[0]['need'])) {
+        } else if (is_array($flowNodes[$nowNode]['need'])) {
 
             /* 确定流程是否需要 */
-            foreach ($flowNodes[0]['need'] as $val) {
+            foreach ($flowNodes[$nowNode]['need'] as $val) {
                 if ($val['type'] == 1) {
                     if ($data[$val['field']] > $val['value']) {
                         $need   = 1;
-                        if ($flowNodes[0]['needtype'] == 2) {
+                        if ($flowNodes[$nowNode]['needtype'] == 2) {
                             break;
                         }
                     } else {
                         $need   = 0;
-                        if ($flowNodes[0]['needtype'] == 1) {
+                        if ($flowNodes[$nowNode]['needtype'] == 1) {
                             break;
                         }
                     }
                 } else if ($val['type'] == 2) {
                     if ($data[$val['field']] == $val['value']) {
                         $need   = 1;
-                        if ($flowNodes[0]['needtype'] == 2) {
+                        if ($flowNodes[$nowNode]['needtype'] == 2) {
                             break;
                         }
                     } else {
                         $need   = 0;
-                        if ($flowNodes[0]['needtype'] == 1) {
+                        if ($flowNodes[$nowNode]['needtype'] == 1) {
                             break;
                         }
                     }
                 } else if ($val['type'] == 3) {
                     if ($data[$val['field']] < $val['value']) {
                         $need   = 1;
-                        if ($flowNodes[0]['needtype'] == 2) {
+                        if ($flowNodes[$nowNode]['needtype'] == 2) {
                             break;
                         }
                     } else {
                         $need   = 0;
-                        if ($flowNodes[0]['needtype'] == 1) {
+                        if ($flowNodes[$nowNode]['needtype'] == 1) {
                             break;
                         }
                     }
@@ -338,7 +340,7 @@ class FlowControl
             if ($need == 1) {
                 return self::getNewNodeAndCheckUserAndOrdernum($flowNodes, $orderRule, $userID, $nowNode);
             } else {
-                return self::getCheck($flowID, $userID, $data, intval($nowNode)+1);
+                return self::getNewCheck($flowID, $userID, $data, intval($nowNode)+1);
             }
         }
     }
@@ -401,10 +403,10 @@ class FlowControl
         if (empty($flowNodes[$nowNode]['user'])) {
             if ($flowNodes[$nowNode]['type'] == 1) {
                 if (!empty($flowNodes[$nowNode]['department'])) {
-                    $where['DepartmentID']  = $flowNodes[$nowNode]['department'];
+                    $where['DepartmentID']  = explode(',', $flowNodes[$nowNode]['department']);
                 }
                 if (!empty($flowNodes[$nowNode]['role'])) {
-                    $where['RoleID'] = $flowNodes[$nowNode]['role'];
+                    $where['RoleID'] = explode(',', $flowNodes[$nowNode]['role']);
                 }
                 if ($flowNodes[$nowNode]['self'] == 1) {
                     $departmentID   = $medoo->get('user', 'DepartmentID', ['ID' => $userID]);
@@ -697,9 +699,63 @@ class FlowControl
      */
     private static function goNextNode($flowNodes, $program)
     {
-        $medoo      = \process\Workflow::connectdb();
-        $nextNode   = $program['NowNode']+1;
-        $nextRes    = self::getNextNode($flowNodes, $nextNode, $program['UserID']);
+        $medoo          = \process\Workflow::connectdb();
+        $nextNode       = $program['NowNode'] = $program['NowNode']+1;
+        $programdata    = $medoo->get("formtable{$program['WorkflowID']}", '*', ['ID' => $program['FormID']]);
+        
+        if ($flowNodes[$nextNode]['need'] == 1) {
+            $nextRes    = self::getNextNode($flowNodes, $nextNode, $program['UserID']);
+        } else if (empty($flowNodes[$nextNode])) {
+            return self::successOver($program['ID']);
+        } else {
+            foreach ($flowNodes[$nextNode]['need'] as $val) {
+                if ($val['type'] == 1) {
+                    if ($programdata[$val['field']] > $val['value']) {
+                        $need   = 1;
+                        if ($flowNodes[$nowNode]['needtype'] == 2) {
+                            break;
+                        }
+                    } else {
+                        $need   = 0;
+                        if ($flowNodes[$nowNode]['needtype'] == 1) {
+                            break;
+                        }
+                    }
+                } else if ($val['type'] == 2) {
+                    if ($programdata[$val['field']] == $val['value']) {
+                        $need   = 1;
+                        if ($flowNodes[$nowNode]['needtype'] == 2) {
+                            break;
+                        }
+                    } else {
+                        $need   = 0;
+                        if ($flowNodes[$nowNode]['needtype'] == 1) {
+                            break;
+                        }
+                    }
+                } else if ($val['type'] == 3) {
+                    if ($programdata[$val['field']] < $val['value']) {
+                        $need   = 1;
+                        if ($flowNodes[$nowNode]['needtype'] == 2) {
+                            break;
+                        }
+                    } else {
+                        $need   = 0;
+                        if ($flowNodes[$nowNode]['needtype'] == 1) {
+                            break;
+                        }
+                    }
+                }
+            }
+            
+            if ($need == 1) {
+                $nextRes    = self::getNextNode($flowNodes, $nextNode, $program['UserID']);
+            } else {
+                return self::goNextNode($flowNodes, $program);
+            }
+        }
+        
+        
         $updata     = [
             'CheckUserID'       => $nextRes['checkUserID'],
             'CheckRoleID'       => $nextRes['checkRoleID'],
@@ -799,7 +855,8 @@ class FlowControl
                 }
             }
             if ($val['TypeID'] == 7 || $val['TypeID'] == 8) {
-                $data[$val['FieldName']]    = strtotime($data[$val['FieldName']]);
+                if (strtotime($data[$val['FieldName']]) > 0)        // 此处验证是否是时间格式
+                    $data[$val['FieldName']]    = strtotime($data[$val['FieldName']]);
             }
         }
         

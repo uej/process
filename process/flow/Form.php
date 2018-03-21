@@ -19,9 +19,10 @@ class Form
         7 => ['fieldname' => 'Time', 'name' => '时间', 'type' => 'int', 'formtype' => 'input', 'inputtype' => 'text', 'config' => ['timetype']],
         8 => ['fieldname' => 'TimeBetween', 'name' => '时间区间', 'type' => 'int', 'formtype' => 'input', 'inputtype' => 'text', 'config' => ['timetype']],
         9 => ['fieldname' => 'FileName', 'name' => '上传附件', 'type' => 'varchar',  'length' => 255, 'formtype' => 'input', 'inputtype' => 'file', 'config' => ['placeholder']],
+        10 => ['fieldname' => 'Decimal', 'name' => '小数', 'type' => 'double', 'formtype' => 'input', 'inputtype' => 'text', 'config' => ['placeholder']],
     ];
     
-    public static $fieldstype   = [0,1,2,3,4,5,6,7,8,9];
+    public static $fieldstype   = [0,1,2,3,4,5,6,7,8,9,10];
 
     
     /**
@@ -51,7 +52,7 @@ class Form
         $form   = $fieldRes['data'];
         
         $medoo  = \process\Workflow::connectdb();
-        if ($medoo->insert('flowform', $form)) {
+        if ($medoo->insert('flowform', $form)->errorCode() !== '00000') {
             $medoo->pdo->rollBack();
             $result['errormsg'] = '创建流程表单失败';
             return $result;
@@ -190,8 +191,8 @@ class Form
                 $data['Value']      = htmlspecialchars(trim($val['Value']));
             if (in_array($data['Type'], [7,8])) {
                 $data['Timetype']   = intval($val['Timetype']);
-                if (!in_array($data['Timetype'], [1,2,3])) {
-                    return ['code' => 0, 'errormsg' => '选项过少'];
+                if (!in_array($data['Timetype'], [1,2,3,4,5])) {
+                    return ['code' => 0, 'errormsg' => '时间类型不对'];
                 }
             }
             $data['WorkflowID'] = $flowID;

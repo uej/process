@@ -53,6 +53,7 @@ class IndexController extends Controller {
     public function addflow() {
         if (empty($_POST)) {
             $this->assign('flowtype', \example\model\Flowtype::select('*'));
+            $this->assign('formlist', \process\flow\Form::$fields);
             $this->display();
         } else {
             
@@ -67,78 +68,13 @@ class IndexController extends Controller {
      */
     public function addflowgo() {
         $workflow   = new \process\Workflow();
-//        var_dump($_POST);die;
         
         // 测试流程
-        $flow   = [
-            'Name'      => '事假',
-            'Introduce' => '用户事假申请',
-            'FlowNodes' => [
-                [
-                    'type'          => 2,
-                    'role'          => 2,
-                    'self'          => 1,
-                    'need'          => 1,
-                ],
-                [
-                    'type'          => 1,
-                    'role'          => 4,
-                    'copy'          => 4,
-                    'need'          => [
-                        [
-                            'field' => 'TimeBetween1Total',
-                            'type'  => 1,
-                            'value' => 3,
-                        ]
-                    ],
-                    'needtype'      => 1,
-                ]
-            ],
-            'DepartmentID'  => NULL,
-            'RoleID'        => 1,
-            'TypeID'        => 1,
-            'UserID'        => NULL,
-            'OrderRule'     => [
-                [
-                    'type'  => 1,
-                    'value' => 'SJ'
-                ],
-                [
-                    'type'  => 2,
-                    'datetype'  => 2
-                ],
-                [
-                    'type'  => 3,
-                    'length'=> 3,
-                ]
-            ],
-            'Form'  => [
-                [
-                    'fieldtypeid'   => 1,
-                    'FieldName'     => 'Content1',
-                    'FieldTitle'    => '原因',
-                    'Placeholder'   => '请输入请假原因',
-                    'Must'          => 1,
-                ],
-                [
-                    'fieldtypeid'   => 8,
-                    'FieldName'     => 'TimeBetween1',
-                    'FieldTitle'    => '起止时间',
-                    'Timetype'      => 3,
-                    'Must'          => 1,
-                ]
-            ]
-        ];
+//        $flow   = include(__DIR__ . '/../data/flow2.php');
         
         $res    = $workflow->createFlow($flow);
         
-        var_dump($res);
-        if ($res['code'] == 1) {
-            
-//            die(json_encode(['code' => 1, 'msg' => '添加流程成功']));
-        } else {
-//            die(json_encode($res));
-        }
+        dump($res);
     }
     
     
@@ -159,22 +95,30 @@ class IndexController extends Controller {
      */
     public function doapply() {
         $workflow   = new \process\Workflow();
-        $res        = $workflow->startNew(1, 2, [
+//        $userID     = 2;
+//        $flowID     = 1;
+//        $data       = [
 //            'Content1'  => '阿斯顿加啊卡机双打刻录机打开asdada按时大大',
-//            'TimeBetween1Start' => "2018-03-14 09:00",
-//            'TimeBetween1End'   => '2018-03-15 18:00',
+//            'TimeBetween1Start' => "2018-03-14 09",
+//            'TimeBetween1End'   => '2018-03-15 18',
 //            'TimeBetween1Total' => 2,
-        ]);
+//        ];
+        
+        $res        = $workflow->startNew($flowID, $userID, $data);
         
         dump($res);
     }
     
     public function doflow() {
         $workflow   = new \process\Workflow();
-        $res        = $workflow->doFlow(1, 5, [
+        $programID  = 1;
+        $userID     = 3;
+        $data       = [
             'Content'   => '通过',
             'Pass'      => 1,
-        ]);
+        ];
+        
+        $res        = $workflow->doFlow($programID, $userID, $data);
         
         dump($res);
     }
