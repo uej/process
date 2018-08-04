@@ -174,10 +174,11 @@ class Form
                     return ['code' => 0, 'errormsg' => '选项过少'];
                 }
             }
-                
+            
+            $data   = [];
             $data['TypeID']         = intval($val['fieldtypeid']);
             $data['Type']           = self::$fields[$data['TypeID']]['type'];
-            $data['FieldName']      = $val['FieldName'];
+            $data['FieldName']      = $val['FieldName'] . $key;
             if (!empty(self::$fields[$data['TypeID']]['length']))
                 $data['FieldLength']    = self::$fields[$data['TypeID']]['length'];
             $data['FieldTitle']     = htmlspecialchars(trim($val['FieldTitle']));
@@ -198,11 +199,11 @@ class Form
             $data['WorkflowID'] = $flowID;
             
             if ($val['fieldtypeid'] == 8) {
-                $data['FieldName']  = $val['FieldName'] . 'Start';
+                $data['FieldName']  = $data['FieldName'] . 'Start';
                 $form[] = $data;
-                $data['FieldName']  = $val['FieldName'] . 'End';
+                $data['FieldName']  = $data['FieldName'] . 'End';
                 $form[] = $data;
-                $data['FieldName']  = $val['FieldName'] . 'Total';
+                $data['FieldName']  = $data['FieldName'] . 'Total';
                 $data['FieldTitle'] = $data['FieldNote'] = '总时长(天)';
                 $data['Type']       = 'double';
                 $form[] = $data;

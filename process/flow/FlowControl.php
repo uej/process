@@ -58,7 +58,7 @@ class FlowControl
                 return $result;
             }
             if (!empty($val['department']) && $val['self'] == 1) {
-                $result['errormsg'] = '申请人本部门审批后不能再选择部门';
+                $result['errormsg'] = '本部门审批节点不能选择部门';
                 return $result;
             }
             if ($val['self'] == 1 && empty($val['role'])) {
@@ -504,6 +504,7 @@ class FlowControl
             'Content'       => $data['Content'],
             'Files'         => $data['File'],
             'Result'        => $data['Pass'],
+            'CreateTime'    => time(),
         ];
         $medoo->pdo->beginTransaction();
         if ($medoo->insert('flowlog', $checklog)->errorCode() !== '00000') {

@@ -22,7 +22,7 @@ return [
                 [
                     'field' => 'Title2',
                     'type'  => 2,
-                    'value' => '多彩贵州印象网络传媒股份有限公司',
+                    'value' => 'XXXX有限公司',
                 ]
             ],
             'needtype'      => 2,
